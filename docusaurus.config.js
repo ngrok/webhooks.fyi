@@ -66,6 +66,9 @@ const config = {
           },
         ],
       },
+      sidebar: {
+        hideable: false,
+      },
       footer: {
         style: 'dark',
         copyright: `Built with ❤️ and supported by <a href="//ngrok.com" target="_ngrok">ngrok</a>.`,
