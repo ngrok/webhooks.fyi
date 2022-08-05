@@ -54,6 +54,21 @@ const themeScript = `
 export default function Document() {
   return (
     <Html className="antialiased [font-feature-settings:'ss01']" lang="en">
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-3KWHGF4F2P" />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3KWHGF4F2P', {
+          page_path: window.location.pathname,
+        });
+      `,
+        }}
+      />
+
       <Head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </Head>
