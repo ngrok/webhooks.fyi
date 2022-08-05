@@ -13,7 +13,7 @@ Ideally, submit a pull request. Alternatively, file an issue. Either way, please
 
 Note: We want easily observable facts, not subjective ratings of webhooks, APIs, etc.
 
-# Contribuging a Patch
+# Contributing a Patch
 
 1. Fork the repository into your own account
 1. Use the instructions in README.md to deploy locally
