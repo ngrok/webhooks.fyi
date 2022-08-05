@@ -1,0 +1,42 @@
+---
+title: Best Practices for Webhook Listeners
+description: Security Best Practices for Webhook Listeners
+--- 
+
+In addition to using a good webhook provider and implementation, you can take the following steps to improve your webhook security:
+
+* **Use HTTPS on the listener with a strong cipher suite**: First and foremost, do not operate in clear text (seriously, don't!). Most webhooks don't provide any control to encrypt your messages. This recommendation is even more critical in webhooks with  Basic Authentication and Shared Secret. Use HTTPS with a strong cipher suite to mitigate the man-in-the-middle.
+
+* **Review the webhook documentation and ensure you're implementing all the security features offered:** in webhook communications, the authentication, message integrity validation, and replay prevention validation and enforcement happen on the webhook listener. Therefore, you should read, understand, and implement the security controls made available by your provider.
+
+* **Restrict who can send you webhook requests based on the IP**: Some services — i.e. [Github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses) — provide a public list of IPs used in their service to send you webhook notifications. You can use this list to implement network restrictions and ensure only the webhook service is sending the notification. Note that this may not be possible if the webhook service does not provide a list of their origin IPs.
+
+* **Storing secrets**: Credentials and shared secrets should be treated as confidential information and handled like private keys (handled secretly and stored appropriately both on the webhook service and listener in production usage).
+
+* **Segmenting secrets:** Some services — like DocuSign — will let you adopt a unique secret for each webhook listener. This allows you to segment secrets and reduce the likelihood of compromise.
+
+* **Rotating secrets:** In addition to segmentation, you can also change secrets at a regular intervals or after important events — i.e. when an important employee leaves the organization — to mitigate risk if the secret is compromised.
+
+* **Use strong signature algorithms**: Whenever possible, use the strongest hashing algorithms available with the webhook signature. HMAC-SHA256 is the most popularly used hash signature.
+
+* **Call back the service:** An interesting method to validate if a webhook request is legitimate is to call the service that sent the webook from a different channel such as their REST API to confirm said event happened. Some services — i.e. Atlassian Jira — will include an API endpoint in the webhook body to facilitate the validation. However, this approach impacts performance and time to value.
+
+```mermaid
+sequenceDiagram
+   autonumber
+   participant Service API
+   participant Webhook Service
+   participant Listening App
+   Note left of Webhook Service: Create webhook message
+   Note left of Webhook Service: Add Shared Secret
+   Webhook Service->>+Listening App: Send Webhook notification
+   Note right of Listening App: Validate Shared Secret
+   Note right of Listening App: Get id
+   Listening App->>+Service API: Send API call with id
+   Note left of Service API: Process request
+   Service API-->>-Listening App: Retrieve response
+   Note right of Listening App: Process webhook call
+   Listening App-->>-Webhook Service: Return response
+```
+
+_Webhook notification with API callback_
