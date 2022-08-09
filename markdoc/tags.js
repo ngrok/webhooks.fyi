@@ -4,6 +4,9 @@ import { SpecTable } from '@/components/SpecTable'
 import { CardGrid } from '@/components/CardGrid'
 import { WebhookDirectory } from '@/components/WebhookDirectory'
 import { SharedSecret } from '@/components/diagrams/SharedSecret'
+import { mTLS } from '@/components/diagrams/mTLS'
+import { HMAC } from '@/components/diagrams/HMAC'
+import { Callback } from '@/components/diagrams/Callback'
 
 const tags = {
   callout: {
@@ -48,6 +51,10 @@ const tags = {
   },
   'spec-table': {
     render: SpecTable,
+    attributes: {
+      title: { type: String },
+      desc: { type: String },
+    },
   },
   'spec-table-row': {
     selfClosing: true,
@@ -88,6 +95,15 @@ const tags = {
   },
   'diagram-shared-secret': {
     render: SharedSecret,
+  },
+  'diagram-hmac': {
+    render: HMAC,
+  },
+  'diagram-mtls': {
+    render: mTLS,
+  },
+  'diagram-callback': {
+    render: Callback,
   },
 }
 

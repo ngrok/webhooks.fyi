@@ -50,7 +50,7 @@ const navigation = [
     links: [
       { title: 'Intro', href: '/best-practices/intro' },
       { title: 'For Providers', href: '/best-practices/webhook-providers' },
-      { title: 'For Consumers', href: '/best-practices/webhook-listeners' },
+      { title: 'For Consumers', href: '/best-practices/webhook-consumers' },
     ],
   },
   {

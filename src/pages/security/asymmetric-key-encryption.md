@@ -3,20 +3,23 @@ title: Asymmetric Key Encryption (ECDSA and RSA)
 description: Webhook security Asymmetric Keys 
 --- 
 
-## Features
-
-{% spec-table %}
-  {% spec-table-row title="Complexity" description="High" /%}
-  {% spec-table-row title="Authentication" description="✅" /%}
-  {% spec-table-row title="Confidentiality" description="❌" / %}
-  {% spec-table-row title="Integrity" description="✅" / %}
-  {% spec-table-row title="Non-Repudiation" description="✅" / %}
-  {% spec-table-row title="Replay Prevention" description="Requires Timestamps" link="/security/replay-prevention" / %}
-  {% spec-table-row title="Versioning" description="Requires Forward Compatibility" link="/ops-experience/versioning" / %}
-  {% spec-table-row title="Zero Downtime Rotation" description="Requires Key Rotation" link="/ops-experience/key-rotation" / %}
-{% /spec-table %}
-
-## Overview
+{% table %}
+---
+* **Complexity**
+* - High
+---
+* **Pros**
+* - Extends HMAC with Non-Repudiation (ensures webhook calls can be sent only by the webhook provider)
+---
+* **Caveats**
+* - Additional deployment complexity (compared to HMAC)
+  - Additional operational complexity to issue, renew, and rotate keys
+---
+* **Examples**
+* - [Sendgrid](https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features)
+  - [PayPal](https://developer.paypal.com/docs/api-basics/notifications/webhooks/notification-messages/#event-headers)
+{% /table %}
+---
 
 In our research, we found a couple of providers — PayPal and SendGrid — using asymmetric encryption for webhook security. In this method, the webhook provider uses a private key (only known to the provider) to sign requests, while the listener uses a public key with a verifier to validate webhook calls. At a conceptual level, the process works as follows:
 
@@ -32,10 +35,3 @@ Webhook implementations with asymmetric keys can also use the same techniques as
 However, asymmetric encryption comes with drawbacks. The most compelling: asymmetric encryption is harder to implement than HMAC and will introduce many different methods for shipping and rotating public keys
 
 PayPal sends the public key with the webhook request for verification (in the `PAYPAL-CERT-URL` header). SendGrid informs the public key in its settings page.
-
-## Examples
-
-{% spec-table %}
-  {% spec-table-row title="Sendgrid" description="Docs" link="https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features" /%}
-  {% spec-table-row title="PayPal" description="Docs" link="https://developer.paypal.com/docs/api-basics/notifications/webhooks/notification-messages/#event-headers" /%}
-{% /spec-table %}
