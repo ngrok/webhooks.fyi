@@ -23,7 +23,7 @@ const navigation = [
   {
     title: 'Webhook Security',
     links: [
-      { title: 'Introduction', href: '/security/webhook-security-intro' },
+      { title: 'Introduction', href: '/security/intro' },
       { title: 'Shared Secret', href: '/security/shared-secret' },
       { title: 'HMAC', href: '/security/hmac' },
       { title: 'Asymmetric Keys', href: '/security/asymmetric-key-encryption' },
@@ -35,6 +35,7 @@ const navigation = [
   {
     title: 'Operational Experience',
     links: [
+      { title: 'Introduction', href: '/ops-experience/intro' },
       { title: 'Header Format', href: '/ops-experience/header-format' },
       { title: 'Forward Compatibility', href: '/ops-experience/versioning' },
       { title: 'Zero Downtime Rotation', href: '/ops-experience/key-rotation' },
@@ -46,8 +47,9 @@ const navigation = [
   {
     title: 'Best Practices',
     links: [
-      { title: 'For Providers', href: '/docs/best-practices-webhook-providers' },
-      { title: 'For Consumers', href: '/docs/best-practices-webhook-listeners' },
+      { title: 'Intro', href: '/best-practices/intro' },
+      { title: 'For Providers', href: '/best-practices/webhook-providers' },
+      { title: 'For Consumers', href: '/best-practices/webhook-listeners' },
     ],
   },
   {

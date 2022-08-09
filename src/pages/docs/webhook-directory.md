@@ -1,6 +1,6 @@
 ---
-title: List of webhook references
-description: List of webhook references
+title: Webhook directory
+description: List of webhook references by type
 --- 
 
 {% webhook %}
