@@ -21,22 +21,6 @@ In addition to using a good webhook provider and implementation, you can take th
 
 * **Call back the service:** An interesting method to validate if a webhook request is legitimate is to call the service that sent the webook from a different channel such as their REST API to confirm said event happened. Some services — i.e. Atlassian Jira — will include an API endpoint in the webhook body to facilitate the validation. However, this approach impacts performance and time to value.
 
-```mermaid
-sequenceDiagram
-   autonumber
-   participant Service API
-   participant Webhook Service
-   participant Listening App
-   Note left of Webhook Service: Create webhook message
-   Note left of Webhook Service: Add Shared Secret
-   Webhook Service->>+Listening App: Send Webhook notification
-   Note right of Listening App: Validate Shared Secret
-   Note right of Listening App: Get id
-   Listening App->>+Service API: Send API call with id
-   Note left of Service API: Process request
-   Service API-->>-Listening App: Retrieve response
-   Note right of Listening App: Process webhook call
-   Listening App-->>-Webhook Service: Return response
-```
+{% diagram-callback / %} 
 
 _Webhook notification with API callback_

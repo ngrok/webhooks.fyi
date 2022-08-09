@@ -3,6 +3,10 @@ import { LinkGrid } from '@/components/LinkGrid'
 import { SpecTable } from '@/components/SpecTable'
 import { CardGrid } from '@/components/CardGrid'
 import { WebhookDirectory } from '@/components/WebhookDirectory'
+import { SharedSecret } from '@/components/diagrams/SharedSecret'
+import { mTLS } from '@/components/diagrams/mTLS'
+import { HMAC } from '@/components/diagrams/HMAC'
+import { Callback } from '@/components/diagrams/Callback'
 
 const tags = {
   callout: {
@@ -47,6 +51,10 @@ const tags = {
   },
   'spec-table': {
     render: SpecTable,
+    attributes: {
+      title: { type: String },
+      desc: { type: String },
+    },
   },
   'spec-table-row': {
     selfClosing: true,
@@ -84,6 +92,18 @@ const tags = {
       rotation: { type: String },
       link: { type: String },
     },
+  },
+  'diagram-shared-secret': {
+    render: SharedSecret,
+  },
+  'diagram-hmac': {
+    render: HMAC,
+  },
+  'diagram-mtls': {
+    render: mTLS,
+  },
+  'diagram-callback': {
+    render: Callback,
   },
 }
 
