@@ -3,6 +3,7 @@ import { LinkGrid } from '@/components/LinkGrid'
 import { SpecTable } from '@/components/SpecTable'
 import { CardGrid } from '@/components/CardGrid'
 import { WebhookDirectory } from '@/components/WebhookDirectory'
+import { SharedSecret } from '@/components/diagrams/SharedSecret'
 
 const tags = {
   callout: {
@@ -84,6 +85,9 @@ const tags = {
       rotation: { type: String },
       link: { type: String },
     },
+  },
+  'diagram-shared-secret': {
+    render: SharedSecret,
   },
 }
 
