@@ -11,43 +11,43 @@ const navigation = [
     title: 'Intro',
     links: [
       { title: 'Overview', href: '/' },
-      { title: 'Webhook primer', href: '/docs/webhook-primer' },
-      { title: 'Webhook directory' , href: '/docs/webhook-directory' },
+      { title: 'What are webhooks?', href: '/docs/webhook-primer' },
+    ],
+  },
+  {
+    title: 'Webhook Directory',
+    links: [
+      { title: 'All providers by name' , href: '/docs/webhook-directory' },
     ],
   },
   {
     title: 'Webhook Security',
     links: [
-      { title: 'Webhook Security Overview', href: '/docs/webhook-security-intro' },
-      {
-        title: 'Authentication and Message Security',
-        href: '/docs/webhook-authentication-message-security',
-      },
+      { title: 'Introduction', href: '/security/webhook-security-intro' },
+      { title: 'Shared Secret', href: '/security/shared-secret' },
+      { title: 'HMAC', href: '/security/hmac' },
+      { title: 'Asymmetric Keys', href: '/security/asymmetric-key-encryption' },
+      { title: 'OAuth2, JWTs, and JWKs', href: '/security/jwt-jwk-oauth2' },
+      { title: 'mTLS', href: '/security/end-to-end-encryption' },
+      { title: 'Replay prevention', href: '/security/replay-prevention' },
     ],
   },
   {
-    title: 'Security Methods',
+    title: 'Operational Experience',
     links: [
-      { title: 'Basic Auth', href: '/docs/basic-auth' },
-      { title: 'HMAC', href: '/docs/hmac' },
-      { title: 'Asymmetric Keys', href: '/docs/asymmetric-key-encryption' },
-      { title: 'OAuth2, JWTs, and JWKs', href: '/docs/jwt-jwk-oauth2' },
-      { title: 'mTLS', href: '/docs/end-to-end-encryption' },
-    ],
-  },
-  {
-    title: 'HMAC Controls',
-    links: [
-      { title: 'Key Rotation', href: '/docs/hmac/key-rotation' },
-      { title: 'Forward Compatibility', href: '/docs/hmac/versioning' },
-      { title: 'Replay prevention', href: '/docs/hmac/replay-prevention' },
+      { title: 'Header Format', href: '/ops-experience/header-format' },
+      { title: 'Forward Compatibility', href: '/ops-experience/versioning' },
+      { title: 'Zero Downtime Rotation', href: '/ops-experience/key-rotation' },
+      { title: 'Multiple URLS', href: '/ops-experience/multiple-urls' },
+      { title: 'Documentation', href: '/ops-experience/documentation' },
+      { title: 'Endpoint Verification', href: '/ops-experience/endpoint-verification' },
     ],
   },
   {
     title: 'Best Practices',
     links: [
-      { title: 'Webhook Providers', href: '/docs/best-practices-webhook-providers' },
-      { title: 'Webhook Listeners', href: '/docs/best-practices-webhook-listeners' },
+      { title: 'For Providers', href: '/docs/best-practices-webhook-providers' },
+      { title: 'For Consumers', href: '/docs/best-practices-webhook-listeners' },
     ],
   },
   {

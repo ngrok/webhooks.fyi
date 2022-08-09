@@ -29,7 +29,13 @@ Webhook providers implement security controls on runtime to give listeners ways 
 
 In our research, 97% of the webhook providers implement security controls on runtime. However, at the time of our study, we couldn't find any documentation on [Jira](https://developer.atlassian.com/server/jira/platform/webhooks/#overview), [Olark](https://www.olark.com/help/webhooks), and [ActiveCampaign](https://www.activecampaign.com/blog/working-with-webhook-data) webhook security controls on runtime.
 
-Security during runtime is the most astounding area of this article in both volume and findings. We will explore our results under [Webhook Authentication and Message Security](/docs/webhook-authentication-message-security).
+Security during runtime is the most astounding area of this article in both volume and findings. In the next pages, we break down each authentication and message security control with some examples, a summary table, and some diagrams:
+
+- [Shared Secrets, Basic Authentication, Bearer Tokens, and Verification token](/security/shared-secret)
+- [Hash-based Message Authentication Code (HMAC)](/security/hmac)
+- [Asymmetric Key Encryption](/security/asymmetric-key-encryption)
+- [JWTs, JWKs, and OAuth 2.0](/security/jwt-jwk-oauth2)
+- [Mutual TLS Authentication (mTLS)](/security/end-to-end-encryption)
 
 ## Webhook Security: Compensatory Controls
 

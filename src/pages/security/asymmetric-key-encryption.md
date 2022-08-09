@@ -11,9 +11,9 @@ description: Webhook security Asymmetric Keys
   {% spec-table-row title="Confidentiality" description="❌" / %}
   {% spec-table-row title="Integrity" description="✅" / %}
   {% spec-table-row title="Non-Repudiation" description="✅" / %}
-  {% spec-table-row title="Replay Prevention" description="Requires Timestamps" link="/docs/hmac/replay-prevention" / %}
-  {% spec-table-row title="Versioning" description="Requires Forward Compatibility" link="/docs/hmac/versioning" / %}
-  {% spec-table-row title="Zero Downtime Rotation" description="Requires Key Rotation" link="/docs/hmac/key-rotation" / %}
+  {% spec-table-row title="Replay Prevention" description="Requires Timestamps" link="/security/replay-prevention" / %}
+  {% spec-table-row title="Versioning" description="Requires Forward Compatibility" link="/ops-experience/versioning" / %}
+  {% spec-table-row title="Zero Downtime Rotation" description="Requires Key Rotation" link="/ops-experience/key-rotation" / %}
 {% /spec-table %}
 
 ## Overview

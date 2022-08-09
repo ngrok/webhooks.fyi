@@ -1,5 +1,5 @@
 ---
-title: Basic Auth
+title: Shared Secret
 description: Basic Authentication, Shared Credentials, or Verification Token
 --- 
 
@@ -18,7 +18,7 @@ description: Basic Authentication, Shared Credentials, or Verification Token
 
 ## Overview
 
-In our research, 10% of the webhook providers use Basic Authentication, shared credentials, or a verification token for authentication. In this method, the webhook provider and listener share a common secret used exclusively to authenticate webhook requests:
+In our research, 10% of the webhook providers use Shared Secrets — in form of Basic Authentication, shared credentials, bearer tokens, or a verification token — for authentication. In this method, the webhook provider and listener share a common secret used exclusively to authenticate webhook requests:
 
 1. On webhook requests, the provider sends a webhook notification containing the message plus a shared secret in a pre-defined header variable or the Authorization header using the Basic Auth format ( `Authorization: Basic &lt;"username:password" in base64>` ).
 2. The webhook listener validates the value in the request versus the shared secret. Only requests with the correct secret are processed.
