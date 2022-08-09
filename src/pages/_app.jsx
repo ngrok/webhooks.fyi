@@ -24,6 +24,7 @@ const navigation = [
     title: 'Webhook Security',
     links: [
       { title: 'Introduction', href: '/security/intro' },
+      { title: 'One Time Verification', href: '/security/one-time-verification-challenge' },
       { title: 'Shared Secret', href: '/security/shared-secret' },
       { title: 'HMAC', href: '/security/hmac' },
       { title: 'Asymmetric Keys', href: '/security/asymmetric-key-encryption' },
