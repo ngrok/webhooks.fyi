@@ -15,7 +15,7 @@ This website is split in four sections:
 - [Webhook Directory](/docs/webhook-directory) lists different webhook implementations with their security and operational experience features
 - [Webhook Security](/security/intro) documents the approaches for securing webhook communications
 - [Operational Experience](/ops-experience/intro) describes features for delivering a better experience for consuming and maintaining webhooks
-- [Best Practices](/best-practices/intro) covers the best practices for webhook providers and consumers
+- Best Practices for webhook [providers](/best-practices/webhook-providers) and [consumers](/best-practices/webhook-consumers)
 
 ## Why does this exists?
 

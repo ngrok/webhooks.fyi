@@ -37,18 +37,17 @@ const navigation = [
     title: 'Operational Experience',
     links: [
       { title: 'Introduction', href: '/ops-experience/intro' },
+      { title: 'Documentation', href: '/ops-experience/documentation' },
       { title: 'Header Format', href: '/ops-experience/header-format' },
       { title: 'Forward Compatibility', href: '/ops-experience/versioning' },
       { title: 'Zero Downtime Rotation', href: '/ops-experience/key-rotation' },
       { title: 'Multiple URLS', href: '/ops-experience/multiple-urls' },
-      { title: 'Documentation', href: '/ops-experience/documentation' },
       { title: 'Endpoint Verification', href: '/ops-experience/endpoint-verification' },
     ],
   },
   {
     title: 'Best Practices',
     links: [
-      { title: 'Intro', href: '/best-practices/intro' },
       { title: 'For Providers', href: '/best-practices/webhook-providers' },
       { title: 'For Consumers', href: '/best-practices/webhook-consumers' },
     ],
