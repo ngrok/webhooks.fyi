@@ -38,7 +38,7 @@ const navigation = [
     links: [
       { title: 'Introduction', href: '/ops-experience/intro' },
       { title: 'Documentation', href: '/ops-experience/documentation' },
-      { title: 'Header Format', href: '/ops-experience/header-format' },
+      { title: 'Resiliency', href: '/ops-experience/resiliency' },
       { title: 'Forward Compatibility', href: '/ops-experience/versioning' },
       { title: 'Zero Downtime Rotation', href: '/ops-experience/key-rotation' },
       { title: 'Multiple URLS', href: '/ops-experience/multiple-urls' },

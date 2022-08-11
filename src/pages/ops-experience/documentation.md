@@ -3,12 +3,9 @@ title: Documentation
 description: Documentation
 --- 
 
-Delightful developer and ops experience starts with docs that are easy to understand, complete, and insightful.
-
-Given each webhook implementation's uniqueness, good documentation is crucial for building webhook consumers fast and safely. 
+Delightful developer and ops experience starts with docs that are easy to understand, complete, and insightful. Given each webhook implementation's uniqueness, good documentation is crucial for building webhook consumers fast and safely. Great webhook documentations provide:
 
 [comment]: <TODO: @sudobinbash: add good examples we found>
-Great webhook documentations provide:
 1. An overview of when webhooks should be used
 1. A list of events supported and how to subscribe to events 
 1. (If one-time verification check exists), how to perform the verification
