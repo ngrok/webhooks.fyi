@@ -1,12 +1,12 @@
 ---
 title: Introduction
-pageTitle: Webhooks.fyi - Overview
-description: In the last 6 months, we integrated webhooks for 100 different systems. This website shows the good, the bad, and the ugly plus our learnings on webhook security.
+pageTitle: Webhooks.fyi
+description: Learn the most popular approaches for building, securing, and operating webhooks, with recommendations for webhook providers and consumers
 ---
 
 Webhooks are a simple and powerful way for services to notify other systems of relevant events. While webhooks are universal in concept, they are unstandardized API contracts, with implementations varying in security controls and operational experience.
 
-Webhooks.fyi is explores the most popular approaches for securing and operating webhooks, with recommendations building better webhooks as a provider and for using webhooks as a consumer.
+Webhooks.fyi explores the most popular approaches for securing and operating webhooks, with recommendations building better webhooks as a provider and for using webhooks as a consumer.
 
 ## What should you expect to find?
 
