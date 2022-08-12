@@ -3,8 +3,6 @@ title: Key Rotation
 description: Webhook security Key Rotation 
 --- 
 
-[comment]: <TODO: @sudobinbash: add more examples>
-
 Webhooks rely heavily on secrets — hash keys, tokens, certificates — that should be rotated periodically to keep communications safe. Good webhook implementations recognize this necessity and implement features to simplify and automate the key rotations:
 
 Providers — like [Box](https://developer.box.com/guides/webhooks/v2/signatures-v2/), [Brex](https://developer.brex.com/docs/webhooks/), [Docusign](https://developers.docusign.com/platform/webhooks/connect/hmac/), and [PagerDuty](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTkz-verifying-signatures) — implemented interesting controls within their webhooks for key rotation. 
