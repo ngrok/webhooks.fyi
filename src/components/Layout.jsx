@@ -11,6 +11,7 @@ import { Navigation } from '@/components/Navigation'
 import { Prose } from '@/components/Prose'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { Footer } from '@/components/Footer'
+import { Search } from '@/components/Search'
 
 function Header({ navigation }) {
   let [isScrolled, setIsScrolled] = useState(false)
@@ -48,12 +49,11 @@ function Header({ navigation }) {
           </a>
         </Link>
       </div>
-      {/* 
-      //TODO: Implement search
+      
       <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
         <Search />
       </div> 
-      */}
+     
       <div className="relative flex basis-0 justify-end items-center space-x-6 sm:space-x-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
         <Link href="https://ngrok.com" target="_ngrok">
