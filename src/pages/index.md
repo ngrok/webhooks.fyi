@@ -1,7 +1,7 @@
 ---
 title: Introduction
-pageTitle: Webhooks.fyi - Overview
-description: In the last 6 months, we integrated webhooks for 100 different systems. This website shows the good, the bad, and the ugly plus our learnings on webhook security.
+pageTitle: Webhooks.fyi
+description: Learn the most popular approaches for building, securing, and operating webhooks, with recommendations for webhook providers and consumers
 ---
 
 Webhooks are the foundation of modern API development. They enable us to react to changes in our systems, an incoming text message, a successful payment, or that latest pull request no matter our stack. While webhooks are universal in concept, they are unstandardized API contracts with few organizations paying attention to their design, security controls, and overall operational experience.

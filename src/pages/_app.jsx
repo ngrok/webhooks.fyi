@@ -42,7 +42,6 @@ const navigation = [
       { title: 'Forward Compatibility', href: '/ops-experience/versioning' },
       { title: 'Zero Downtime Rotation', href: '/ops-experience/key-rotation' },
       { title: 'Multiple URLS', href: '/ops-experience/multiple-urls' },
-      { title: 'Endpoint Verification', href: '/ops-experience/endpoint-verification' },
     ],
   },
   {
@@ -115,6 +114,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>{pageTitle}</title>
         {description && <meta name="description" content={description} />}
+        <link rel="shortcut icon" href="/favicon.png" />
       </Head>
       <Layout
         navigation={navigation}

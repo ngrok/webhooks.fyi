@@ -17,6 +17,7 @@ description: One time verification challenge
 ---
 * **Examples**
 * - [Adobe Sign](https://helpx.adobe.com/sign/using/adobe-sign-webhooks-api.html#VoI)
+  - [Airship](https://docs.airship.com/platform/sms/inbound-message-handling/#registering-your-sms-webhook)
   - [Microsoft OneDrive](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/webhook-receiver-validation-request?view=odsp-graph-online)
   - [Okta](https://developer.okta.com/docs/concepts/event-hooks/#one-time-verification-request)
   - [Twitter](https://developer.twitter.com/en/docs/twitter-api/enterprise/account-activity-api/guides/securing-webhooks)
