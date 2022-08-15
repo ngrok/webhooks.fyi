@@ -12,19 +12,17 @@ It serves both as a directory of webhook providers and a collection best practic
 
 ## What should you expect to find?
 
-This website is split in four sections:
-
 - [Webhook Directory](/docs/webhook-directory) lists different webhook implementations with their security and operational experience features
 - [Webhook Security](/security/intro) documents the approaches for securing webhook communications
 - [Operational Experience](/ops-experience/intro) describes features for delivering a better experience for consuming and maintaining webhooks
-- Best Practices for webhook [providers](/best-practices/webhook-providers) and [consumers](/best-practices/webhook-consumers)
+- [Best Practices for webhook providers](/best-practices/webhook-providers) and [consumers](/best-practices/webhook-consumers)
 
-## Can I contribute to webhooks.fyi?
+## Contributing to webhooks.fyi
 
 Yes! We have many webhooks to document, patterns to uncover, and best practices to highlight!
 Our [contributing page](/docs/how-to-contribute) covers how you can help.
 
-## Why does this exists?
+## Why does webhooks.fyi exists?
 
 Recently, [our team at ngrok](https://ngrok.com/) studied 100 webhook providers and built in-product verifications for 50 of the most popular providers. During this effort, we found exciting and challenging patterns that inspired us to share our research so other developers can build and consume webhooks more securely.
 

@@ -28,7 +28,29 @@ description: Basic Authentication, Shared Credentials, or Verification Token
 
 In our research, 10% of the webhook providers use Shared Secrets — in form of Basic Authentication, shared credentials, bearer tokens, or a verification token — for authentication. In this method, the webhook provider and listener share a common secret used exclusively to authenticate webhook requests:
 
-1. On webhook requests, the provider sends a webhook notification containing the message plus a shared secret in a pre-defined header variable or the Authorization header using the Basic Auth format ( `Authorization: Basic &lt;"username:password" in base64>` ).
+1. On webhook requests, the provider sends a webhook notification containing the message plus a shared secret in a pre-defined header variable or the Authorization header using the Basic Auth format ( `Authorization: Basic <"username:password" in base64>` ):
+
+    ```js
+    app.post('/webhook', (req, res) => {
+      
+      // get authorization header (Basic <value>)
+      const b64auth = (req.headers.authorization || '').split('Basic ')[1] || ''
+      // Get login and password
+      const [login, password] = Buffer.from(b64auth, 'base64').toString().split(':')
+
+      // Verify login and password are set and correct
+      if (login && password && 
+          login === process.env.WEBHOOK_LOGIN && 
+          password === process.env.WEBHOOK_PW) {
+        // Webhook Authenticated 
+        // process and respond...
+        res.json({ message: "Success" })
+      }else{
+        res.status(401).send('Authentication required.')
+      }
+    })
+    ```
+
 2. The webhook listener validates the value in the request versus the shared secret. Only requests with the correct secret are processed.
 
 {% diagram-shared-secret / %} 
