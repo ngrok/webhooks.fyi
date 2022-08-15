@@ -9,8 +9,12 @@ export function WebhookDirectory({ children }) {
           <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold sm:table-cell">Hash Algorithm</th>
           <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold sm:table-cell">Encode</th>
           <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold lg:table-cell">Timestamp</th>
-          <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold lg:table-cell">Forward compatibility</th>
-          <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold lg:table-cell">Zero Downtime Rotation</th>
+          <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold lg:table-cell">
+            <a href="/ops-experience/versioning">Forward compatibility</a>
+          </th>
+          <th scope="col" className="bg-white dark:bg-slate-900 sticky top-20 hidden border-y py-3.5 text-center text-sm font-semibold lg:table-cell">
+            <a href="/ops-experience/key-rotation">Zero Downtime Rotation</a>
+          </th>
         </tr>
       </thead>
       <tbody>
