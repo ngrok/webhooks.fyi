@@ -3,6 +3,10 @@ title: Webhook directory
 description: List of webhook references by type
 --- 
 
+{% callout title="Contribute to this list" %}
+New webhooks are created and improved every day. If we missed or need to update your favorite webhooks, please [contribute](/docs/how-to-contribute) to this guide.
+{% /callout %}
+
 {% webhook %}
   {% webhook-entry provider="Airship" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://support.airship.com/hc/en-us/articles/360032501831-Implementing-a-Signature-Hash-and-Validating-an-Open-Channel-Webhook" /%}
   {% webhook-entry provider="Autodesk Forge" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://forge.autodesk.com/en/docs/webhooks/v1/developers_guide/overview/" /%}

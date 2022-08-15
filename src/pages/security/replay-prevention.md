@@ -36,6 +36,65 @@ On webhook requests, the provider:
 The webhook listener receives the request and:
 
 1. Extracts the timestamp — i.e. from the request header — and validates if the timestamp is within an acceptable timeframe (i.e., 3-5 minutes).
-1. If the timestamp is valid, repeat the same steps from the webhook provider to sign the timestamp+request body and compare the results with the signature sent. If the result matches, the request is considered legit. If not, the request is not authenticated and its contents or timestamp are tampered.
 
-To ensure the timestamp validation works, you must keep your listener clock in sync with the webhook provider. The use of an NTP server should address this concern.
+    ```js
+      ...
+      const timestampHeader = 'Request-Timestamp'
+      app.post('/webhook', (req, res) => {
+        // Request timestamp in unix date 1000;
+        const requestTimestamp = req.get(timestampHeader) * 1000;
+        // Tolerance zone: 5 minutes ago
+        const tolerance = Date.now() - (5 * 60 * 1000);
+        if (requestTimestamp < tolerance) {
+          // The request timestamp is outside of the tolerance zone.
+          res.status(403).send('Request expired')
+        }else{
+          // The request timestamp is in the tolerance zone.
+          ...
+    ```
+
+1. If the timestamp is valid, repeat the same steps from the webhook provider to sign the request and compare the results with the signature sent:
+
+    ```js
+    ...
+    const signatureHeader = 'Signature-Header'
+    const signatureAlgorithm = 'sha256'
+    const encodeFormat = 'hex'
+    const hmacSecret = process.env.WEBHOOK_SECRET
+    const timestampHeader = 'Request-Timestamp'
+    app.post('/webhook', (req, res) => {
+      ...
+      if (requestTimestamp < tolerance) {
+        // The request timestamp is outside of the tolerance zone.
+        ...
+      }else{
+        // The request timestamp is in the tolerance zone.
+        // Create digest with payload+timestamp+hmac secret
+        const hashPayload = req.rawBody+'.'req.get(timestampHeader)
+        const hmac = crypto.createHmac(signatureAlgorithm, hmacSecret)
+        const digest = Buffer.from(signatureAlgorithm + '=' + hmac.update(hashPayload).digest(encodeFormat), 'utf8')
+        // Get hash sent by the provider
+        const providerSig = Buffer.from(req.get(signatureHeader) || '', 'utf8')
+        // Compare digest signature with signature sent by provider
+        if (providerSig.length !== digest.length || !crypto.timingSafeEqual(digest, providerSig)) {
+          res.status(401).send('Request unauthorized')
+        }else{
+          // Webhook Authenticated 
+          // process and respond...
+          res.json({ message: "Success" })
+        }
+      }
+    })
+    ```
+
+1. If the result matches, the request is considered legit. If not, the request is not authenticated and its contents or timestamp are tampered.
+
+## Important Notes
+
+- to avoid requests with tampered timestamps, webhook providers must include the timestamp in the signature digest:
+
+  ```js
+  const hashPayload = req.rawBody+'.'req.get(timestampHeader)
+  ```
+
+- To ensure the timestamp validation works, you must keep your listener clock in sync with the webhook provider. The use of an NTP server should address this concern.

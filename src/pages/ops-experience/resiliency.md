@@ -10,9 +10,22 @@ Webhook listeners — like any other piece of software — will eventually becom
 
 - **Heartbeat checks**: Webhook providers reach out to the listeners regularly to check their status. If a listener is not available, the provider takes action — like queueing notifications or sending alerts to system admins — until the webhook listener is fixed. This feature is helpful especially in webhooks that don't send notifications often.
 
+    ```js
+    app.post('/webhook', (req, res) => {
+      if (!req.rawBody) {
+        // empty value = heartbeat check. Return 200 or 204 - No Content
+        res.status(204).send()
+      }else{
+        ...
+    ```
+
 - **Queueing**: webhook providers can keep track of historical information of webhook events sent and allow consumers to send messages again after failures or unavailability. Queues can be implemented on listener errors or in conjunction with heartbeat checks.
 
-- Some webhook providers implement **Circuit Breaking** logic to throttle and aleviate requests to webhook listeners when webhook requests cross a error or response time threshold.
+    ![Webhook Events and retry mechanism](/img/webhook_failure.png)
+
+- **Circuit Breaking**: Some webhook providers implement circuit breaking logic to throttle and aleviate requests to webhook listeners when webhook requests cross a error or response time threshold.
+
+    ![Webhook Circuit breaking](/img/circuit_breaking.png)
 
 These features help consumers keep their service resilient and recover from issues faster and without message loss. 
 
