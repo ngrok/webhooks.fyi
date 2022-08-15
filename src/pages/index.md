@@ -4,9 +4,11 @@ pageTitle: Webhooks.fyi
 description: Learn the most popular approaches for building, securing, and operating webhooks, with recommendations for webhook providers and consumers
 ---
 
-Webhooks are a simple and powerful way for services to notify other systems of relevant events. While webhooks are universal in concept, they are unstandardized API contracts, with implementations varying in security controls and operational experience.
+Webhooks are the foundation of modern API development. They enable us to react to changes in our systems, an incoming text message, a successful payment, or that latest pull request no matter our stack. While webhooks are universal in concept, they are unstandardized API contracts with few organizations paying attention to their design, security controls, and overall operational experience.
 
-Webhooks.fyi explores the most popular approaches for securing and operating webhooks, with recommendations building better webhooks as a provider and for using webhooks as a consumer.
+Webhooks.fyi seeks to change that.
+
+It serves both as a directory of webhook providers and a collection best practices for providing and consuming webhooks. Starting from security, moving into payload protection, and continuing into operationalizing webhooks, we delve into the concepts and practices currently availabe in the wild. 
 
 ## What should you expect to find?
 

@@ -5,7 +5,7 @@ description: List of webhook references by type
 
 {% webhook %}
   {% webhook-entry provider="Airship" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://support.airship.com/hc/en-us/articles/360032501831-Implementing-a-Signature-Hash-and-Validating-an-Open-Channel-Webhook" /%}
-  {% webhook-entry provider="Autodesk Forge" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://buildkite.com/docs/apis/webhooks" /%}
+  {% webhook-entry provider="Autodesk Forge" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://forge.autodesk.com/en/docs/webhooks/v1/developers_guide/overview/" /%}
   {% webhook-entry provider="Bitbucket" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://confluence.atlassian.com/bitbucketserver/manage-webhooks-938025878.html#Managewebhooks-webhooksecrets" /%}
   {% webhook-entry provider="Bolt" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://help.bolt.com/developers/guides/webhooks/hook-verification/" /%}
   {% webhook-entry provider="Box" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="✅" link="https://developer.box.com/guides/webhooks/v2/signatures-v2/" /%}
