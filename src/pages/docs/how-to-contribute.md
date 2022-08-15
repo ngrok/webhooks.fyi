@@ -5,18 +5,30 @@ description: Quidem magni aut exercitationem maxime rerum eos.
 
 ---
 
-## NOTE: WORK IN PROGRESS!
 
-[comment]: <TODO: @caseysoftware: complete this + add a contribute.md. Perhaps use our community slack for feedback?>
+## How you can help
 
-## Why contribute?
+As we surveyed the webhooks ecosystem for implementations, we started with the top ~150 we could think of, discover, and find examples for and narrowed our focus to the top 100 measured by sentiment, traffic, and interest from informal polling. We didn't include every webhook provider here but want to expand this out to be more comprehensive.
 
-Webhooks.fyi is built for collaboration. We believe collaboration is key in improving the collective knowledge on building better webhooks. You can contribute to webhooks.fyi in different ways:
+If we missed your favorite webhooks or even your company’s webhooks, please feel free to add a pull request filling in the blanks. We've listed some of the top requested webhooks below.
 
-- **Provide Feedback**: The quickest way to collaborate is to provide feedback. Comments can be added to Shortcut Pages in regards to missing shortcuts, inconsistencies, or ideas for improvement. Please also leave comments if you need certain aspects of an application covered better. Also leave comments under Feedback Pages if you see anything that can be done better. At any time, you may comment as a guest, or as registered user.
+## Reporting Mistakes
 
-- **Submit a webhook to the directory**: The
+If something changed or we go something wrong, let us know!
 
-- **Add information to our guides**: The
+Ideally, submit a pull request. Alternatively, file an issue. Either way, please link to the webhook provider's docs so we can confirm.
 
-- **Edit Pages**:
+Note: We want easily observable facts, not subjective ratings of webhooks, APIs, etc.
+
+## Contributing a Patch
+
+1. Fork the repository into your own account
+1. Use the instructions in README.md to deploy locally
+1. Add your changes (most likely to markdown files under `/src/pages/`)
+1. Confirm that pages still render properly
+1. Submit a pull request with links to relevant docs
+
+## Todo
+
+We didn't get to add every webhook we wanted and we would love to include more under `/src/pages/docs/webhook-directory.md`! 
+Pull requests are welcome!

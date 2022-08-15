@@ -49,7 +49,7 @@ HMAC offers the following advantages versus Basic Authentication:
 
 #### HMAC is only as good as its implementation
 
-Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lousy security, and lack of documentation that made their solutions tough to implement, manage, and keep safe. While we share more of what we saw in our [article](https://blog.ngrok.com), these are four of the most frustrating cases:
+Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lousy security, and lack of documentation that made their solutions tough to implement, manage, and keep safe. While we share more of what we saw in our [article](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we), these are four of the most frustrating cases:
 
 **Unnecessary complexity**: Many webhook providers have signature steps with unnecessary steps. One webhook provider adds line breaks within the webhook signature. This step only adds complexity — esp on systems using different characters to break lines — without adding any security value:
 

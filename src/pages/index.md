@@ -19,12 +19,15 @@ This website is split in four sections:
 - [Operational Experience](/ops-experience/intro) describes features for delivering a better experience for consuming and maintaining webhooks
 - Best Practices for webhook [providers](/best-practices/webhook-providers) and [consumers](/best-practices/webhook-consumers)
 
+## Can I contribute to webhooks.fyi?
+
+Yes! We have many webhooks to document, patterns to uncover, and best practices to highlight!
+Our [contributing page](/docs/how-to-contribute) covers how you can help.
+
 ## Why does this exists?
 
 Recently, [our team at ngrok](https://ngrok.com/) studied 100 webhook providers and built in-product verifications for 50 of the most popular providers. During this effort, we found exciting and challenging patterns that inspired us to share our research so other developers can build and consume webhooks more securely.
 
 {% callout title="We have a deep dive" %}
-If you want to know more about our research and our key findings, read our [Deep Dive: Webhook Security In Practice](https://blog.ngrok.com)
+If you want to know more about our research and our key findings, read our [Deep Dive: Webhook Security In Practice](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we)
 {% /callout %}
-
-[comment]: <TODO: @caseysoftware: update for the actual link to the blog post>
