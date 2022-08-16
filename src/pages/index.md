@@ -26,6 +26,7 @@ Our [contributing page](/docs/how-to-contribute) covers how you can help.
 
 Recently, [our team at ngrok](https://ngrok.com/) studied 100 webhook providers and built in-product verifications for 50 of the most popular providers. During this effort, we found exciting and challenging patterns that inspired us to share our research so other developers can build and consume webhooks more securely.
 
-{% callout title="We have a deep dive" %}
-If you want to know more about our research and our key findings, read our [Deep Dive: Webhook Security In Practice](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we)
-{% /callout %}
+[comment]: <TODO: @sudobinbash: Launch blog>
+[comment]: <{% callout title="We have a deep dive" %}>
+[comment]: <If you want to know more about our research and our key findings, read our [Deep Dive: Webhook Security In Practice](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we)>
+[comment]: <{% /callout %}>
