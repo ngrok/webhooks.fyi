@@ -48,6 +48,7 @@ New webhooks are created and improved every day. If we missed or need to update 
   {% webhook-entry provider="Slack" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://api.slack.com/authentication/verifying-requests-from-slack" /%}
   {% webhook-entry provider="Sonatype Nexus" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://help.sonatype.com/repomanager3/integrations/webhooks/working-with-hmac-payloads" /%}
   {% webhook-entry provider="Square" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.squareup.com/docs/webhooks/step3validate" /%}
+  {% webhook-entry provider="Stripe" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://stripe.com/docs/webhooks/signatures" /%}
   {% webhook-entry provider="Tiktok" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://developers.tiktok.com/doc/webhooks-verification" /%}
   {% webhook-entry provider="TrendMicro Conformity" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://cloudone.trendmicro.com/docs/conformity/webhook-communication/" /%}
   {% webhook-entry provider="Twilio" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://www.twilio.com/docs/usage/security#validating-requests" /%}
