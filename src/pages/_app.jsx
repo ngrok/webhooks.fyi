@@ -115,6 +115,13 @@ export default function App({ Component, pageProps }) {
         <title>{pageTitle}</title>
         {description && <meta name="description" content={description} />}
         <link rel="shortcut icon" href="/favicon.png" />
+        <meta property="og:url" content="https://webhooks.fyi/" />
+        <meta property="og:title" content={pageTitle} />
+        <meta name="og:image" property="og:image" content="/banner.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ngrokHQ" />
+        <meta name="twitter:creator" content="@ngrokHQ" />
+        <meta name="twitter:image" content="https://webhooks.fyi/banner.png" />
       </Head>
       <Layout
         navigation={navigation}
