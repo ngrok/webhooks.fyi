@@ -70,7 +70,10 @@ HMAC offers the following advantages versus Basic Authentication:
 
 ## HMAC is only as good as its implementation
 
-Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and lack of documentation that made their solutions tough to implement and keep safe — more on that in our [article](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we). Good webhook implementations will tyically:
+[comment]: <TODO: @sudobinbash: Launch blog>
+[comment]: <Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and lack of documentation that made their solutions tough to implement and keep safe — more on that in our [article](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we). Good webhook implementations will tyically:>
+
+Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and lack of documentation that made their solutions tough to implement and keep safe. Good webhook implementations will tyically:
 
 1. Use strong hash algorithms such as `sha256` and `sha512`
 1. Add sensitive headers to the hash digest:
