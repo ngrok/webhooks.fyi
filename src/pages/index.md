@@ -8,7 +8,7 @@ Webhooks are the foundation of modern API development. They enable us to react t
 
 Webhooks.fyi seeks to change that.
 
-It serves both as a directory of webhook providers and a collection best practices for providing and consuming webhooks. Starting from security, moving into payload protection, and continuing into operationalizing webhooks, we delve into the concepts and practices currently availabe in the wild. 
+It serves both as a directory of webhook providers and a collection of best practices for providing and consuming webhooks. Starting from security, moving into payload protection, and continuing into operationalizing webhooks, we delve into the concepts and practices currently available in the wild. 
 
 ## What should you expect to find?
 

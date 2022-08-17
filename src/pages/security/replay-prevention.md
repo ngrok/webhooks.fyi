@@ -1,6 +1,6 @@
 ---
 title: Replay prevention
-description: Webhook security Replay prevention 
+description: Learn how webhook providers leverage signed timestamps to mitigate replay attacks
 --- 
 
 {% table %}
@@ -12,7 +12,7 @@ description: Webhook security Replay prevention
 * - Mitigates replay attacks by adding a signed timestamp to the webhook request
 ---
 * **Caveats**
-* - Requires webhook provider and consumers to have clock in sync (or close to)
+* - Requires webhook provider and consumers to have a clock in sync (or close to)
   - Requires alignment in time format — i.e. UNIX timestamp or RFC 3339 and time zones for the proper validation
   - Timestamps can be sent in the same header as hash signatures or in a dedicated timestamp header
 ---
@@ -25,17 +25,17 @@ description: Webhook security Replay prevention
 {% /table %}
 ---
 
-Many webhook vendors take advantage of hashing and encryption to add security beyond authentication and message integrity. By combining message integrity with timestamps, providers offer a way to validate when a call is made and mitigate replay attacks. In our research, We saw the use of timestamps in conjunction with HMAC — i.e. [Calendly](https://developer.calendly.com/api-docs/ZG9jOjM2MzE2MDM4-webhook-signatures), Assymetric Encryption - [PayPal](https://developer.paypal.com/api/rest/webhooks/#link-eventheadervalidation), and JWT/JWK/OAuth — [8x8](https://developer.8x8.com/contactcenter/docs/verify-webhook-callbacks). Timestamp generation and validation takes the following steps:
+Many webhook vendors use hashing and encryption to add security beyond authentication and message integrity. By combining message integrity with timestamps, providers offer a way to validate when calls are made and mitigate replay attacks. In our research, We saw the use of timestamps in conjunction with HMAC — i.e. [Calendly](https://developer.calendly.com/api-docs/ZG9jOjM2MzE2MDM4-webhook-signatures), Asymmetric Encryption - [PayPal](https://developer.paypal.com/api/rest/webhooks/#link-eventheadervalidation), and JWT/JWK/OAuth — [8x8](https://developer.8x8.com/contactcenter/docs/verify-webhook-callbacks). Timestamp generation and validation takes the following steps:
 
 On webhook requests, the provider:
 
-1. Concatenates the timestamp of when the request is created with the webhook payload
+1. Concatenates the timestamp of the request creation with the webhook payload
 1. Signs the concatenated value
 1. Sends both the encoded signature and the timestamp to the webhook request
 
 The webhook listener receives the request and:
 
-1. Extracts the timestamp — i.e. from the request header — and validates if the timestamp is within an acceptable timeframe (i.e., 3-5 minutes).
+1. Extracts the timestamp — i.e., from the request header — and validates if the timestamp is within an acceptable timeframe (i.e., 3-5 minutes).
 
     ```js
       ...
@@ -70,7 +70,7 @@ The webhook listener receives the request and:
       }else{
         // The request timestamp is in the tolerance zone.
         // Create digest with payload+timestamp+hmac secret
-        const hashPayload = req.rawBody+'.'req.get(timestampHeader)
+        const hashPayload = req.rawBody+'.'+req.get(timestampHeader)
         const hmac = crypto.createHmac(signatureAlgorithm, hmacSecret)
         const digest = Buffer.from(signatureAlgorithm + '=' + hmac.update(hashPayload).digest(encodeFormat), 'utf8')
         // Get hash sent by the provider
@@ -80,21 +80,21 @@ The webhook listener receives the request and:
           res.status(401).send('Request unauthorized')
         }else{
           // Webhook Authenticated 
-          // process and respond...
+          // process and respond
           res.json({ message: "Success" })
         }
       }
     })
     ```
 
-1. If the result matches, the request is considered legit. If not, the request is not authenticated and its contents or timestamp are tampered.
+1. If the result matches, the request is considered legit. If not, the request is considered unauthenticated, or its content and timestamp are modified.
 
 ## Important Notes
 
 - to avoid requests with tampered timestamps, webhook providers must include the timestamp in the signature digest:
 
   ```js
-  const hashPayload = req.rawBody+'.'req.get(timestampHeader)
+  const hashPayload = req.rawBody+'.'+req.get(timestampHeader)
   ```
 
 - To ensure the timestamp validation works, you must keep your listener clock in sync with the webhook provider. The use of an NTP server should address this concern.

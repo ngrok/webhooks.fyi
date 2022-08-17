@@ -3,8 +3,8 @@ title: Webhook directory
 description: List of webhook references by type
 --- 
 
-{% callout title="Contribute to this list" %}
-New webhooks are created and improved every day. If we missed or need to update your favorite webhooks, please [contribute](/docs/how-to-contribute) to this guide.
+{% callout title="Contribute to this directory" %}
+New webhooks are created and improved every day. Please [contribute](/docs/how-to-contribute) to this directory if we missed out on any of your favorite webhooks
 {% /callout %}
 
 {% webhook %}

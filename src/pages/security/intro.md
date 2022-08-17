@@ -7,8 +7,8 @@ Webhooks can be secured during setup, runtime, and with compensatory controls:
 
 ## During Setup
 
-Webhook providers implement security controls during webhook setup to reduce the risk of webhook exploration to obtain confidential data. All webhook services we researched provide authentication and authorization to setup webhooks in their Admin UIs and APIs.
-Some webhook providers implement and additional [one time verification challenge](/security/one-time-verification-challenge) to confirm that the webhook consumer controls the endpoint.
+Webhook providers implement security controls during webhook setup to reduce the risk of webhook exploration to obtain confidential data. All webhook services we researched provide authentication and authorization to set up webhooks in their Admin UIs and APIs.
+Some webhook providers implement an additional [one time verification challenge](/security/one-time-verification-challenge) to confirm that the webhook consumer controls the endpoint.
 
 ## During Runtime
 

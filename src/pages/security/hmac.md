@@ -1,6 +1,6 @@
 ---
 title: Hash-based Message Authentication Code (HMAC)
-description: Hash-based Message Authentication Code (HMAC)
+description: HMAC is, by far, the most popular authentication and message security method used on webhook requests, including 65% of the 100 webhooks we studied. In this method, the webhook provider and listener use a secret key to sign and validate webhook requests.
 --- 
 
 {% table %}
@@ -26,9 +26,9 @@ description: Hash-based Message Authentication Code (HMAC)
 {% /table %}
 ---
 
-HMAC is, by far, the most popular authentication and message security method used on webhook requests including 65% of the 100 webhooks we studied. In this method, the webhook provider and listener use a secret key to sign and validate webhook requests.
+HMAC is, by far, the most popular authentication and message security method used on webhook requests, including 65% of the 100 webhooks we studied. In this method, the webhook provider and listener use a secret key to sign and validate webhook requests.
 
-1. On webhook requests, the provider signs the webhook message using the secret key plus a hashing algorithm — typically HMAC-SHA256 — encodes the resulting signature in base64 or hex, and includes the encoded signature in the webhook request as a header.
+1. On webhook requests, the provider signs the webhook message using the secret key plus a hashing algorithm — typically `HMAC-SHA256`, encodes the resulting signature in `base64` or `hex`, and then includes the signature in the webhook request as a header.
 1. The webhook listener receives the request and repeats the same steps — signs and encodes the webhook message using the secret key — and compares the resulting signature with the value sent in the request header. If the result matches, the request is considered legitimate.
 
     ```js
@@ -61,7 +61,7 @@ HMAC is, by far, the most popular authentication and message security method use
 
 _Request Signature Validation_
 
-## HMAC vs Shared Secrets
+## HMAC vs. Shared Secrets
 
 HMAC offers the following advantages versus Basic Authentication:
 
@@ -71,9 +71,9 @@ HMAC offers the following advantages versus Basic Authentication:
 ## HMAC is only as good as its implementation
 
 [comment]: <TODO: @sudobinbash: Launch blog>
-[comment]: <Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and lack of documentation that made their solutions tough to implement and keep safe — more on that in our [article](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we). Good webhook implementations will tyically:>
+[comment]: <Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and documentation that made their solutions tough to implement and keep safe — more on that in our [article](https://blog.ngrok.com/posts/get-webhooks-secure-it-depends-a-field-guide-to-we). Good webhook implementations will typically:>
 
-Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and lack of documentation that made their solutions tough to implement and keep safe. Good webhook implementations will tyically:
+Like any other security control, HMAC is only as good as its implementation. In our research, we saw many examples of webhook providers with unnecessary complexity, lack of features, and complex documentation that made their solutions tough to implement and keep safe. Good webhook implementations will typically:
 
 1. Use strong hash algorithms such as `sha256` and `sha512`
 1. Add sensitive headers to the hash digest:
@@ -84,7 +84,7 @@ Like any other security control, HMAC is only as good as its implementation. In 
     ...
     app.post('/webhook', (req, res) => {
       // Create digest from the request payload and the clientid header
-      const hashPayload = req.rawBody+'.'req.get(clientIdHeader)
+      const hashPayload = req.rawBody+'.'+req.get(clientIdHeader)
       const hmac = crypto.createHmac(signatureAlgorithm, hmacSecret)
       const digest = Buffer.from(signatureAlgorithm + '=' + hmac.update(hashPayload).digest(encodeFormat), 'utf8')
       ...

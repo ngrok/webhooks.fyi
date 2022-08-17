@@ -1,6 +1,6 @@
 ---
 title: Mutual TLS Authentication (mTLS)
-description: Webhook security mTLS 
+description: The use of mTLS authentication ensures both webhook service and listener are authenticated — through a TLS handshake — before a webhook message is sent 
 --- 
 
 {% table %}
@@ -23,9 +23,9 @@ description: Webhook security mTLS
 {% /table %}
 ---
 
-The use of mTLS authentication ensures that traffic is secure and trusted in both directions between webhook services and listener apps. With mTLS, both webhook service and listener apps pass through a TLS handshake — in which each system is required to authenticate with their certificates — before the webhook message is sent. 
+The use of mTLS authentication ensures that traffic is secure and trusted in both directions between webhook services and listeners. With mTLS, both webhook service and listener pass through a TLS handshake — in which both systems present trusted certificates — before the webhook notification is sent. 
 
-This method delivers a stronger authentication between the webhook service and listener, ensures communication confidentiality (the webhook message is sent only after both sides are authenticated), and both integrity and non-repudiation (when combined with webhook signatures).
+This method delivers a stronger authentication between the webhook service and listener and ensures communication confidentiality — a webhook message is sent only after both sides are authenticated. When combined with webhook signatures, it also delivers message integrity.
 
 {% diagram-mtls / %} 
 
@@ -33,9 +33,9 @@ _Mutual TLS with request signature validation_
 
 ## Security at the transport layer
 
-Mutual TLS (mTLS) is an encryption protocol defined at the transport layer and available for TCP communications regarless of their application protocol:
+Mutual TLS (mTLS) is an encryption protocol defined at the transport layer and available for TCP communications regardless of their application protocol:
 - Webhooks leverage mTLS the same way protocols like HTTPS, SQL, and SSH.
-- mTLS can be used together with other webhooks security controls, such as [HMAC](/security/hmac). However, mTLS provides enough security to mitigate the use of additional webhook controls in most cases.
+- mTLS can be used with other webhooks security controls, such as [HMAC](/security/hmac). However, in most cases, mTLS provides enough security to mitigate the use of additional webhook controls.
 
 ## Drawbacks
 
