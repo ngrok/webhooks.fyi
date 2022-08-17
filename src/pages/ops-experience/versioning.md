@@ -1,9 +1,11 @@
 ---
 title: Forward Compatibility and versioning
-description: Providing forward compatibility 
+description: Successful webhook implementations will naturally evolve with improvements. Great webhook providers send version information in webhook requests to enable a more seamless transition to consumers to adopt improvements. 
 --- 
 
-Successful webhook implementations will evolve over time with improvements in message payload, additional functionalities, and better security controls. Webhook providers — such as [PagerDuty](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTkz-verifying-signatures), [Circle CI](https://circleci.com/docs/2.0/webhooks/), and [Brex](https://developer.brex.com/docs/webhooks/) — send version information in webhook requests to enable a more seamless transition to consumers to adopt improvements. The version can be informed in multiple ways:
+Successful webhook implementations will naturally evolve with improvements in messaging, new features, and better security controls. Webhook providers — such as [PagerDuty](https://developer.pagerduty.com/docs/ZG9jOjExMDI5NTkz-verifying-signatures), [Circle CI](https://circleci.com/docs/2.0/webhooks/), and [Brex](https://developer.brex.com/docs/webhooks/) — send version information in webhook requests to enable a more seamless transition to consumers to adopt improvements. 
+
+The webhook version can be sent in multiple ways:
 
 - On the signature payload:
     ```
