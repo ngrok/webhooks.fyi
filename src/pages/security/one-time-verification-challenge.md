@@ -21,6 +21,7 @@ description: Learn why and how webhook providers like Twitter, Okta, and Microso
   - [Microsoft OneDrive](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/webhook-receiver-validation-request?view=odsp-graph-online)
   - [Okta](https://developer.okta.com/docs/concepts/event-hooks/#one-time-verification-request)
   - [Twitter](https://developer.twitter.com/en/docs/twitter-api/enterprise/account-activity-api/guides/securing-webhooks)
+  - [Zoom](https://marketplace.zoom.us/docs/api-reference/webhook-reference/#revalidation)
 {% /table %}
 ---
 
