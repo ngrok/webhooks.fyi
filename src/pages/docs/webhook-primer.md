@@ -5,6 +5,8 @@ description: A quick primer on webhooks and how they work
 
 ## What are webhooks?
 
-Webhooks are a way for a service to send updates to another application as events happen. They're popularly used to notify third-party systems of important events and changes, such as a new incident tracked by PagerDuty, a recurring payment processed in Stripe, or an SMS message sent in Twilio. Much of the modern web is built on this distributed communication pattern.
+Webhooks are how one system notifies another system of a state change.
 
-Unlike traditional API requests — originated by the API client when it needs information — webhooks are triggered by events created on the service provider — i.e., a document signed in Docusign, payment processed in Stripe, meeting recording available on Zoom. As a result, applications receiving webhook notifications must be up to receive, validate security, and process the event at any time.
+In architectural terms, a webhook is a programming language agnostic approach for sending messages between distributed systems. The power of webhooks comes first from being independent of any specific tech stack and second from the notification-based approach. Regardless of your architecture, your systems can receive or broadcast webhooks without being dependent on a specific vendor or even on the same network. Further, downstream systems receiving webhooks don't need to poll a central system for updates or status changes, they can simply listen for an event and process the results.
+
+In practical terms, a webhook is simply an HTTP request - usually a POST or GET - with a JSON payload or parameters broadcast from the central system. Much of the modern web is built on this distributed communication pattern. They're popularly used to notify third-party systems of events such as a new incident tracked by PagerDuty, a successful payment in Stripe, or an SMS received by Twilio.
