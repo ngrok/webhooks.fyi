@@ -1,6 +1,6 @@
 ---
 title: Introduction to Webhook Security
-description: An introduction to webhook security on setup, during runtime, and compensatory controls
+description: Webhooks can be secured during setup, runtime, and with compensatory controls with techniques like one-time verification, authentication, message integrity, IP restrictions, and API callbacks
 ---
 
 Webhooks can be secured during setup, runtime, and with compensatory controls:
