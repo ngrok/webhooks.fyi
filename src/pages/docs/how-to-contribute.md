@@ -3,14 +3,15 @@ title: How to contribute
 description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
----
-
+{% callout title="TL;DR" %}
+To contribute with webhooks.fyi, send us a [pull request](https://github.com/ngrok/webhooks.fyi). Ideas and how to contribute below.
+{% /callout %}
 
 ## How you can help
 
 As we surveyed the webhooks ecosystem for implementations, we started with the top ~150 we could think of, discover, and find examples for, and narrowed our focus to the top 100 measured by sentiment, traffic, and interest from informal polling. We didn't include every webhook provider here but want to expand this to be more comprehensive.
 
-If we missed your favorite webhooks or even your company's webhooks, please feel free to add a pull request filling in the blanks. We've listed some of the top requested webhooks below.
+If we missed your favorite webhooks or even your company's webhooks, please feel free to add a pull request filling in the blanks.
 
 ## Reporting Mistakes
 
@@ -22,7 +23,7 @@ Note: We want easily observable facts, not subjective ratings of webhooks, APIs,
 
 ## Contributing a Patch
 
-1. Fork the repository into your github account
+1. Clone our [repository](https://github.com/ngrok/webhooks.fyi)
 1. Use the instructions in README.md to deploy locally
 1. Add your changes (most likely to markdown files under `/src/pages/`)
 1. Confirm that pages still render properly
