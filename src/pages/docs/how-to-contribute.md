@@ -1,6 +1,6 @@
 ---
 title: How to contribute
-description: Quidem magni aut exercitationem maxime rerum eos.
+description: How to contribute to our content, report mistakes, and add vendors to the webhook directory
 ---
 
 {% callout title="TL;DR" %}

@@ -1,6 +1,6 @@
 ---
 title: Multiple URLs
-description: Multiple URLs
+description: Great webhook implementations allow users to send notifications to multiple URLs with different levels of security and events notified
 --- 
 
 [comment]: <TODO: @sudobinbash: add more good examples>

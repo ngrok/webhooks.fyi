@@ -1,6 +1,6 @@
 ---
 title: Shared Secret
-description: Basic Authentication, Shared Credentials, or Verification Token
+description: Learn how webhook providers implement shared secrets — Basic Authentication, Shared Credentials, or Verification Tokens — to secure webhook communications.
 --- 
 
 {% table %}
