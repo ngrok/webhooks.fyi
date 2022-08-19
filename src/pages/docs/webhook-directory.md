@@ -25,6 +25,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Dropbox" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://www.dropbox.com/developers/reference/webhooks" /%}
   {% webhook-entry provider="Facebook Graph API" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.facebook.com/docs/graph-api/webhooks/getting-started/#verification-requests) api" /%}
   {% webhook-entry provider="Facebook Messenger" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.facebook.com/docs/messenger-platform/webhook/#security" /%}
+  {% webhook-entry provider="FastSpring" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.fastspring.com/docs/webhooks-overview" /%}
   {% webhook-entry provider="Frame.io" hash="sha256" encode="base64" rotation="❌" versioning="✅" timestamp="✅" link="https://developer.frame.io/docs/automations-webhooks/webhooks-overview" /%}
   {% webhook-entry provider="GitHub" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.github.com/en/developers/webhooks-and-events/webhooks/securing-your-webhooks" /%}
   {% webhook-entry provider="GraphCMS" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://graphcms.com/docs/api-reference/basics/webhooks" /%}
