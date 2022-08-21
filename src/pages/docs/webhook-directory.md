@@ -30,6 +30,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="GitHub" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.github.com/en/developers/webhooks-and-events/webhooks/securing-your-webhooks" /%}
   {% webhook-entry provider="GraphCMS" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://graphcms.com/docs/api-reference/basics/webhooks" /%}
   {% webhook-entry provider="Heroku" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://devcenter.heroku.com/articles/app-webhooks" /%}
+  {% webhook-entry provider="Hookdeck" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://hookdeck.com/docs/introduction" /%}
   {% webhook-entry provider="HubSpot V1" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="❌" link="https://developers.hubspot.com/docs/api/webhooks/validating-requests" /%}
   {% webhook-entry provider="HubSpot V2" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="❌" link="https://developers.hubspot.com/docs/api/webhooks/validating-requests" /%}
   {% webhook-entry provider="HubSpot V3" hash="sha256" encode="base64" rotation="❌" versioning="✅" timestamp="✅" link="https://developers.hubspot.com/docs/api/webhooks/validating-requests" /%}
