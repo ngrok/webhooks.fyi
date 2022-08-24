@@ -18,4 +18,4 @@ HTTP Signatures describes a method of creating, encoding, and verifying signatur
 
 The Shared Signals and Events (SSE) is an OpenID Foundation initiative focused on establishing a framework for security solutions to send events to each other. While the SSE framework focuses on security, it relies heavily on webhooks as a way to communicate events asynchronously.
 
-[Learn More >](https://openid.net/wg/sse/)
+[Learn More >](https://sharesignals.guide/)
