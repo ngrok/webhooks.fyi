@@ -14,9 +14,9 @@ Some webhook providers implement an additional [one time verification challenge]
 
 Webhook providers implement security controls on runtime to give consumers ways to validate if notifications are authentic, not tampered with, or replayed.
 
-Security during runtime is the most astounding area of webhook security in volume and findings. We broke down each authentication and message security control with some examples, a summary table, and some diagrams:
+During our research, we found many different ways that providers provide security during runtime. We broke down each authentication and message security control with some examples, a summary table, and some diagrams:
 
-- [Shared Secrets, Basic Authentication, Bearer Tokens, and Verification token](/security/shared-secret)
+- [Shared Secrets, Basic Authentication, Bearer Tokens, and Verification tokens](/security/shared-secret)
 - [Hash-based Message Authentication Code (HMAC)](/security/hmac)
 - [Asymmetric Key Encryption](/security/asymmetric-key-encryption)
 - [JWTs, JWKs, and OAuth 2.0](/security/jwt-jwk-oauth2)

@@ -14,7 +14,7 @@ It serves both as a directory of webhook providers and a collection of best prac
 
 - [Webhook Directory](/docs/webhook-directory) lists different webhook implementations with their security and operational experience features
 - [Webhook Security](/security/intro) documents the approaches for securing webhooks
-- [Operational Experience](/ops-experience/intro) details features for consuming and maintaining webhooks better
+- [Operational Experience](/ops-experience/intro) details features for better consuming and maintaining webhooks
 - [Best Practices for webhook providers](/best-practices/webhook-providers) and [consumers](/best-practices/webhook-consumers)
 
 ## Contributing to webhooks.fyi
@@ -26,7 +26,7 @@ Our [contributing page](/docs/how-to-contribute) covers how you can help.
 
 Web development is hard. As you have more moving pieces integrating more systems across different organizations, it only becomes harder.
 
-At [ngrok](https://ngrok.com/), our goal is to simplfiy building for the internet. Since most people find us through their favorite webhook provider, we knew integrating webhook verification would make applications more secure and reliable at scale. During that effort, we investigated 100 webhook providers and built in-product verifications for 50 of the most popular providers. We found practices that stood out as exceptionally powerful and others that left much to be desired.
+At [ngrok](https://ngrok.com/), our goal is to simplify building for the internet. Since most people find us through their favorite webhook provider, we knew integrating webhook verification would make applications more secure and reliable at scale. During that effort, we investigated over 100 webhook providers and built in-product verifications for 50 of the most popular providers. We found practices that stood out as exceptionally powerful and others that left much to be desired.
 
 Our goal in sharing this is to inform teams to choose patterns that make building and consuming webhooks easier, faster, and more secure.
 
