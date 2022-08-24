@@ -39,4 +39,4 @@ Our goal in sharing this is to inform teams to choose patterns that make buildin
 
 Thank you to [everyone who has contributed](https://github.com/ngrok/webhooks.fyi/contributors) to webhooks.fyi. We appreciate you!
 
-![Our contributors](https://contrib.rocks/image?repo=ngrok/webhooks.fyi)
+![Our contributors - image by contrib.rocks](https://contrib.rocks/image?repo=ngrok/webhooks.fyi)
