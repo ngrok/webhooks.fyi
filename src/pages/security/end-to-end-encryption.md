@@ -23,7 +23,7 @@ description: The use of mTLS authentication ensures both webhook service and lis
 {% /table %}
 ---
 
-The use of mTLS authentication ensures that traffic is secure and trusted in both directions between webhook services and listeners. With mTLS, both webhook service and listener pass through a TLS handshake — in which both systems present trusted certificates — before the webhook notification is sent. 
+The use of Mutual TLS (mTLS) authentication ensures that traffic is secure and trusted in both directions between webhook services and listeners. With mTLS, both webhook service and listener pass through a TLS handshake — in which both systems present trusted certificates — before the webhook notification is sent. 
 
 This method delivers a stronger authentication between the webhook service and listener and ensures communication confidentiality — a webhook message is sent only after both sides are authenticated. When combined with webhook signatures, it also delivers message integrity.
 

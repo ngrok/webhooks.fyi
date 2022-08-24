@@ -23,7 +23,7 @@ description: With Asymmetric Key Encryption, webhook providers use a private key
 
 In our research, we found a couple of providers — PayPal and SendGrid — using asymmetric encryption for webhook security. In this method, the webhook provider uses a private key to sign requests while the listener uses a public key to validate webhook calls. At a conceptual level, the process works as follows:
 
-1. On webhook requests, the provider signs the webhook message using its private key and adds it to the webhook request as a header.
+1. On webhook requests, the provider signs the webhook message using its private key and adds the signature to the webhook request as a header.
 2. The webhook listener receives the request and runs an ECDSA or RSA verifier with the public key, the request body, and the signed value from the provider. If the verifier returns positive, it means that the private key could only create the signature, and the request is considered legit.
 
 ## Asymmetric encryption vs HMAC
