@@ -52,6 +52,13 @@ const navigation = [
     ],
   },
   {
+    title: 'Learn More',
+    links: [
+      { title: 'Standardization Efforts', href: '/learn-more/standards' },
+      { title: 'Additional Resources', href: '/learn-more/resources' },
+    ],
+  },
+  {
     title: 'Contributing',
     links: [
       { title: 'How to contribute', href: '/docs/how-to-contribute' },
