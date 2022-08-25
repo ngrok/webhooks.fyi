@@ -6,7 +6,7 @@ description: Learn more about the standardization efforts on webhook communicati
 ## Standardization Efforts
 
 Today, service providers take different approaches when designing and delivering webhooks, leading to inconsistency and complexity in the marketplace. 
-While we couldn't find a standardization effort focused on improving webhook communications, these projects can help standardize how webhooks are built, secured, and consumed in specific use cases, making it easier for both providers and consumers to integrate:
+While we couldn't find a standardization effort dedicated to webhooks, these projects can help standardize how webhooks are built, secured, and consumed in specific use cases, making it easier for both providers and consumers to integrate:
 
 ## IETF HTTP Message Signatures
 
