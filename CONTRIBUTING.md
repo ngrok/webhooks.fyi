@@ -27,7 +27,7 @@ We didn't get to add every webhook we wanted! Here are some we'd love to include
 
 1. 8x8 - https://developer.8x8.com/contactcenter/docs/verify-webhook-callbacks
 1. Active Campaign - https://www.activecampaign.com/blog/working-with-webhook-data
-1. Adobe Acrobat Sign (both approaches) - https://helpx.adobe.com/sign/using/adobe-sign-webhooks-api.html & 
+1. Adobe Acrobat Sign (both approaches) - https://helpx.adobe.com/sign/using/adobe-sign-webhooks-api.html &
 1. Aftership - https://developers.aftership.com/reference/check-signatures
 1. Akamai Identity Cloud - https://janrain-education-center.knowledgeowl.com/home/json-web-keys
 1. Asana - https://developers.asana.com/docs/webhook-security
@@ -43,7 +43,7 @@ We didn't get to add every webhook we wanted! Here are some we'd love to include
 1. Docusign - https://developers.docusign.com/platform/webhooks/connect/hmac/
 1. Fivetran - https://fivetran.com/docs/rest-api/webhooks#signing
 1. Front - https://dev.frontapp.com/docs/webhooks-1
-1. Gitlab - https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#validate-payloads-by-using-a-secret-token
+1. GitLab - https://docs.gitlab.com/ee/user/project/integrations/webhooks.html#validate-payloads-by-using-a-secret-token
 1. Goldman Sachs Dev - https://developer.gs.com/docs/services/transaction-banking/webhooks-auth/
 1. Greenhouse - https://developers.greenhouse.io/webhooks.html#creating-a-web-hook
 1. Mandrill/Mailchimp - https://mailchimp.com/developer/transactional/guides/track-respond-activity-webhooks/#authenticating-webhook-requests
@@ -52,7 +52,7 @@ We didn't get to add every webhook we wanted! Here are some we'd love to include
 1. Okta	- Event Hooks - https://developer.okta.com/docs/concepts/event-hooks/#one-time-verification-request
 1. Olark - https://www.olark.com/help/webhooks
 1. One Drive - https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/webhook-receiver-validation-request?view=odsp-graph-online
-1. Paypal - https://developer.paypal.com/docs/api-basics/notifications/webhooks/notification-messages/#event-headers
+1. PayPal - https://developer.paypal.com/docs/api-basics/notifications/webhooks/notification-messages/#event-headers
 1. Plaid - https://plaid.com/docs/api/webhooks/webhook-verification/
 1. Segment - https://segment.com/docs/connections/destinations/catalog/webhooks/#appendices
 1. SendGrid - https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features
