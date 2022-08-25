@@ -42,3 +42,9 @@ randomString
 ```
 
 Webhook notifications are not sent until the challenge response is successful.
+
+{% callout title="Additional security concerns for webhook providers" type="warning" %}
+Webhook integrations seem simple to secure at the surface. However, webhook URLs can be explored by malicious actors — acting as legitimate webhook consumers — to carry out Distributed Denial of Service (DDoS), Server Site Request Forgery (SSRF), and other attacks to the provider infrastructure.
+
+The [best practices for webhook providers](/best-practices/webhook-providers#implement-security-on-egress-communication) provides guidelines for mitigating these risks in webhook communications. 
+{% /callout %}
