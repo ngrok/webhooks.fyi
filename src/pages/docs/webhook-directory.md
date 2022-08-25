@@ -36,6 +36,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="HubSpot V3" hash="sha256" encode="base64" rotation="❌" versioning="✅" timestamp="✅" link="https://developers.hubspot.com/docs/api/webhooks/validating-requests" /%}
   {% webhook-entry provider="Intercom" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.intercom.com/intercom-api-reference/v1.0/reference/signed-notifications" /%}
   {% webhook-entry provider="LaunchDarkly" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.launchdarkly.com/home/connecting/webhooks" /%}
+  {% webhook-entry provider="Lob" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://help.lob.com/print_mail/webhooks-for-tracking-events" /%}
   {% webhook-entry provider="Mailchimp" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://mailchimp.com/developer/transactional/guides/track-respond-activity-webhooks/#authenticating-webhook-requests" /%}
   {% webhook-entry provider="Microsoft Teams" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-outgoing-webhook?tabs=verifyhmactoken%2Cdotnet" /%}
   {% webhook-entry provider="Modern Treasury" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.moderntreasury.com/docs/verifying-webhooks" /%}
