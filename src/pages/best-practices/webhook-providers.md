@@ -6,11 +6,12 @@ description: Security Best Practices for Webhook Providers
 ## Provide amazing documentation
 
 In webhook communications, the authentication, message integrity validation, and replay prevention validation, and enforcement happen on the webhook listener. Therefore, webhook providers must simplify the work on developers by providing documentation with:
-    * **Complete specs on your webhook security,** including the authentication mode, cipher suite, signature procedure, and best practices for security.
-    * **A description of the steps to validate your webhook messages**.
-    * **A sample code** (not a pseudo-code) developers can run to understand how webhook notifications should be processed
-    * **Instructions on how developers can test your webhooks** against their code running on localhost
-    * **Provide a mechanism to trigger, test, and replay webhooks calls** with a close feedback loop
+
+* **Complete specs on your webhook security,** including the authentication mode, cipher suite, signature procedure, and best practices for security.
+* **A description of the steps to validate your webhook messages**.
+* **A sample code** (not a pseudo-code) developers can run to understand how webhook notifications should be processed
+* **Instructions on how developers can test your webhooks** against their code running on localhost
+* **Provide a mechanism to trigger, test, and replay webhooks calls** with a close feedback loop
 
 ## Implement security on egress communication
 
