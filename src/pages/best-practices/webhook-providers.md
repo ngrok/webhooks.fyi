@@ -15,7 +15,7 @@ In webhook communications, the authentication, message integrity validation, and
 
 ## Implement security on egress communication
 
-Webhook integrations seem simple to secure at the surface. However, webhook URLs can be explored by malicious actors — acting as legitimate webhook consumers — to carry out Distributed Denial of Service (DDoS), Server Site Request Forgery (SSRF), and other attacks to the provider infrastructure as described by [cuu408](https://news.ycombinator.com/item?id=32518208):
+Webhook integrations seem simple to secure at the surface. However, webhook URLs can be explored by malicious actors — acting as legitimate webhook consumers — to carry out Distributed Denial of Service (DDoS), Server Site Request Forgery (SSRF), and other attacks to the provider infrastructure as described by [cuu508](https://news.ycombinator.com/item?id=32518208):
 
 > There are some interesting attack vectors to be aware of if you run a service where users can define webhooks, and your service will will call the user-defined webhooks to notify about certain system events. In my case, a monitoring service which can send notifications by calling user-defined webhook.
 > * Timeouts: the user can set up a webhook receiver that takes very long to generate a response. Your service must be able to deal with that.
