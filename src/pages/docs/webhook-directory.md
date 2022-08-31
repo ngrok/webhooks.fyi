@@ -17,6 +17,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Buildkite" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://buildkite.com/docs/apis/webhooks" /%}
   {% webhook-entry provider="Calendly" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://developer.calendly.com/api-docs/ZG9jOjM2MzE2MDM4-webhook-signatures" /%}
   {% webhook-entry provider="Castle" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.castle.io/docs/subscribe-to-webhooks" /%}
+  {% webhook-entry provider="Convoy" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://getconvoy.io/docs/manual/sources#http-ingestion /%}
   {% webhook-entry provider="Maxio Chargify" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://maxio-chargify.zendesk.com/hc/en-us/articles/5405357509645-Webhooks-Reference#webhook-signature" /%}
   {% webhook-entry provider="CircleCI" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="❌" link="https://circleci.com/docs/2.0/webhooks/" /%}
   {% webhook-entry provider="Coinbase" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.cloud.coinbase.com/commerce/docs/webhooks-fields-and-security" /%}
