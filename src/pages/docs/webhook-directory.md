@@ -56,7 +56,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Tiktok" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://developers.tiktok.com/doc/webhooks-verification" /%}
   {% webhook-entry provider="TrendMicro Conformity" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://cloudone.trendmicro.com/docs/conformity/webhook-communication/" /%}
   {% webhook-entry provider="Twilio" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://www.twilio.com/docs/usage/security#validating-requests" /%}
-  {% webhook-entry provider="Twitter Account Activity API" hash="SHA265" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.twitter.com/en/docs/twitter-api/premium/account-activity-api/overview" /%}
+  {% webhook-entry provider="Twitter Account Activity API" hash="SHA265" encode="sha256" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.twitter.com/en/docs/twitter-api/premium/account-activity-api/overview" /%}
   {% webhook-entry provider="Typeform" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.typeform.com/webhooks/secure-your-webhooks/" /%}
   {% webhook-entry provider="Xero" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.xero.com/documentation/guides/webhooks/configuring-your-server#intent-to-receive" /%}
   {% webhook-entry provider="Zendesk" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.zendesk.com/documentation/event-connectors/webhooks/verifying/" /%}
