@@ -98,3 +98,5 @@ The webhook listener receives the request and:
   ```
 
 - To ensure the timestamp validation works, you must keep your listener clock in sync with the webhook provider. The use of an NTP server should address this concern.
+
+- Some webhook providers — like [8x8](https://developer.8x8.com/contactcenter/docs/verify-webhook-callbacks) and [PayPal](https://developer.paypal.com/api/rest/webhooks/#link-eventheadervalidation) — also send unique ids per webhook notification. While this gives webhook consumers a way to ensure idempotency, it also requires consumers to store and keep track of webhook ids previously processed.

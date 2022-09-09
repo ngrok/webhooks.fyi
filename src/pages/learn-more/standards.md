@@ -3,8 +3,6 @@ title: Standardization Efforts
 description: Learn more about the standardization efforts on webhook communications and security
 ---
 
-## Standardization Efforts
-
 Today, service providers take different approaches when designing and delivering webhooks, leading to inconsistency and complexity in the marketplace. 
 While we couldn't find an active standardization effort dedicated to webhooks, these projects can help standardize how webhooks — and events in general — are built, secured, and consumed, making it easier for both providers and consumers to integrate:
 
