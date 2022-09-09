@@ -11,10 +11,12 @@ description: The use of mTLS authentication ensures both webhook service and lis
 * **Pros**
 * - Message Confidentiality
   - Non-Repudiation (ensures webhook calls can be sent only by the webhook provider)
+  - Both webhook providers and consumers can revocate trust independently
 ---
 * **Caveats**
-* - High complexity
-  - Operational complexity on key rotation
+* - High complexity (compared against HMAC)
+  - Operational complexity on key issuance, rotation, and revocation
+
 ---
 * **Examples**
 * - [Adobe Sign](https://helpx.adobe.com/sign/using/adobe-sign-webhooks-api.html#SSL)
@@ -33,10 +35,10 @@ _Mutual TLS with request signature validation_
 
 ## Security at the transport layer
 
-Mutual TLS (mTLS) is an encryption protocol defined at the transport layer and available for TCP communications regardless of their application protocol:
-- Webhooks leverage mTLS the same way protocols like HTTPS, SQL, and SSH.
-- mTLS can be used with other webhooks security controls, such as [HMAC](/security/hmac). However, in most cases, mTLS provides enough security to mitigate the use of additional webhook controls.
+Mutual TLS (mTLS) applies two-way encryption at the the transport layer. Like two-way SSL, mTLS works the same way with in most TCP communications, regardless of application-level protocol:
+- Webhooks leverage mTLS for two-way encryption similarly to protocols like HTTPS, SQL, and SSH.
+- mTLS can be combined with other webhooks security controls, such as [HMAC](/security/hmac). However, in most cases, mTLS provides enough security to mitigate the use of additional webhook controls.
 
 ## Drawbacks
 
-However, mTLS is often difficult to configure. It also requires updates whenever TLS certificates are issued, renewed, or revoked both on the webhook service and the listener side. This additional burden is considered overkill for most use-cases.
+However, mTLS is often difficult to configure (when compared against HMAC). It also requires updates whenever TLS certificates are issued, renewed, or revoked both on the webhook service and the listener side. This additional burden is considered overkill for most webhook use-cases.
