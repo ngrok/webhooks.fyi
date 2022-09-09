@@ -1,5 +1,5 @@
 ---
-title: Webhook directory
+title: Webhook Directory
 description: List of webhook references by type
 ---
 
@@ -18,7 +18,6 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Calendly" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://developer.calendly.com/api-docs/ZG9jOjM2MzE2MDM4-webhook-signatures" /%}
   {% webhook-entry provider="Castle" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.castle.io/docs/subscribe-to-webhooks" /%}
   {% webhook-entry provider="Convoy" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://getconvoy.io/docs/manual/sources#http-ingestion" /%}
-  {% webhook-entry provider="Maxio Chargify" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://maxio-chargify.zendesk.com/hc/en-us/articles/5405357509645-Webhooks-Reference#webhook-signature" /%}
   {% webhook-entry provider="CircleCI" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="❌" link="https://circleci.com/docs/2.0/webhooks/" /%}
   {% webhook-entry provider="Coinbase" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.cloud.coinbase.com/commerce/docs/webhooks-fields-and-security" /%}
   {% webhook-entry provider="Contentful" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://www.contentful.com/developers/docs/extensibility/app-framework/request-verification/" /%}
@@ -39,6 +38,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="LaunchDarkly" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.launchdarkly.com/home/connecting/webhooks" /%}
   {% webhook-entry provider="Lob" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://help.lob.com/print_mail/webhooks-for-tracking-events" /%}
   {% webhook-entry provider="Mailchimp" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://mailchimp.com/developer/transactional/guides/track-respond-activity-webhooks/#authenticating-webhook-requests" /%}
+  {% webhook-entry provider="Maxio Chargify" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://maxio-chargify.zendesk.com/hc/en-us/articles/5405357509645-Webhooks-Reference#webhook-signature" /%}
   {% webhook-entry provider="Microsoft Teams" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.microsoft.com/en-us/microsoftteams/platform/webhooks-and-connectors/how-to/add-outgoing-webhook?tabs=verifyhmactoken%2Cdotnet" /%}
   {% webhook-entry provider="Modern Treasury" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.moderntreasury.com/docs/verifying-webhooks" /%}
   {% webhook-entry provider="MongoDB" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://www.mongodb.com/docs/realm/endpoints/#payload-signature-verification" /%}
@@ -57,7 +57,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Tiktok" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://developers.tiktok.com/doc/webhooks-verification" /%}
   {% webhook-entry provider="TrendMicro Conformity" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://cloudone.trendmicro.com/docs/conformity/webhook-communication/" /%}
   {% webhook-entry provider="Twilio" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://www.twilio.com/docs/usage/security#validating-requests" /%}
-  {% webhook-entry provider="Twitter Account Activity API" hash="SHA265" encode="sha256" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.twitter.com/en/docs/twitter-api/premium/account-activity-api/overview" /%}
+  {% webhook-entry provider="Twitter Account Activity API" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.twitter.com/en/docs/twitter-api/premium/account-activity-api/overview" /%}
   {% webhook-entry provider="Typeform" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.typeform.com/webhooks/secure-your-webhooks/" /%}
   {% webhook-entry provider="Xero" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.xero.com/documentation/guides/webhooks/configuring-your-server#intent-to-receive" /%}
   {% webhook-entry provider="Zendesk" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.zendesk.com/documentation/event-connectors/webhooks/verifying/" /%}
