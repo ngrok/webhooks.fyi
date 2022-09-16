@@ -18,7 +18,7 @@ During our research, we found many different ways that providers provide securit
 
 - [Shared Secrets, Basic Authentication, Bearer Tokens, and Verification tokens](/security/shared-secret)
 - [Hash-based Message Authentication Code (HMAC)](/security/hmac)
-- [Asymmetric Key Encryption](/security/asymmetric-key-encryption)
+- [Asymmetric Key Signatures](/security/asymmetric-key-signatures)
 - [JWTs, JWKs, and OAuth 2.0](/security/jwt-jwk-oauth2)
 - [Mutual TLS Authentication (mTLS)](/security/end-to-end-encryption)
 - [Replay Prevention](/security/replay-prevention)
