@@ -27,7 +27,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Facebook Messenger" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.facebook.com/docs/messenger-platform/webhook/#security" /%}
   {% webhook-entry provider="FastSpring" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.fastspring.com/docs/webhooks-overview" /%}
   {% webhook-entry provider="Frame.io" hash="sha256" encode="base64" rotation="❌" versioning="✅" timestamp="✅" link="https://developer.frame.io/docs/automations-webhooks/webhooks-overview" /%}
-  {% webhook-entry provider="GitHub" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.github.com/en/developers/webhooks-and-events/webhooks/securing-your-webhooks" /%}
+  {% webhook-entry provider="GitHub" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="/webhook-directory/github" /%}
   {% webhook-entry provider="GraphCMS" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://graphcms.com/docs/api-reference/basics/webhooks" /%}
   {% webhook-entry provider="Heroku" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://devcenter.heroku.com/articles/app-webhooks" /%}
   {% webhook-entry provider="Hookdeck" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://hookdeck.com/docs/introduction" /%}
@@ -58,5 +58,5 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Typeform" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.typeform.com/webhooks/secure-your-webhooks/" /%}
   {% webhook-entry provider="Xero" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.xero.com/documentation/guides/webhooks/configuring-your-server#intent-to-receive" /%}
   {% webhook-entry provider="Zendesk" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.zendesk.com/documentation/event-connectors/webhooks/verifying/" /%}
-  {% webhook-entry provider="Zoom" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://marketplace.zoom.us/docs/api-reference/webhook-reference/#verify-webhook-events" /%}
+  {% webhook-entry provider="Zoom" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="/webhook-directory/zoom" /%}
 {% /webhook %}
