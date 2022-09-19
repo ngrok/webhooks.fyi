@@ -27,10 +27,11 @@ export function WebhookDirectory({ children }) {
 }
 
 WebhookDirectory.Row = function Row({ provider, hash, encode, rotation, versioning, timestamp, link }) {
+  const ext = (link.startsWith('/')) ? false : true
   return ( 
       <tr>
         <td className="border-b py-4 text-sm font-medium sm:pl-2 lg:pl-4">
-          <a href={ link } target="_webhookProvider">{ provider } ↗</a>
+          <a href={ link } target={ ext ? "_webhookProvider" : ""} >{ provider } { ext ? "↗" : ""}</a>
         </td>
         <td className="text-center border-b py-4 text-sm hidden sm:table-cell">{ hash }</td>
         <td className="text-center border-b py-4 text-sm hidden sm:table-cell">{ encode }</td>
