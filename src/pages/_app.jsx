@@ -30,6 +30,7 @@ const navigation = [
       { title: 'Asymmetric Keys', href: '/security/asymmetric-key-signatures' },
       { title: 'OAuth2, JWTs, and JWKs', href: '/security/jwt-jwk-oauth2' },
       { title: 'mTLS', href: '/security/end-to-end-encryption' },
+      { title: 'Dataless notifications', href: '/security/dataless-notifications' },
       { title: 'Replay prevention', href: '/security/replay-prevention' },
     ],
   },
