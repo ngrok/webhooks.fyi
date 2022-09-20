@@ -26,6 +26,6 @@ CloudEvents is a specification for describing event data in a common way. The sp
 
 ## REST Hooks
 
-REST Hooks are an initiative ran by Zapier ran from 2013 to 2017. Their goal was to create a collection of patterns for treating webhooks like subscriptions with a [minimum implementation walktrhough](http://resthooks.org/docs/). 
+REST Hooks are an initiative ran by Zapier ran from 2013 to 2017. Their goal was to create a collection of patterns for treating webhooks like subscriptions with a [minimum implementation walkthrough](http://resthooks.org/docs/). 
 
 [Learn More >](https://github.com/zapier/resthooks)
