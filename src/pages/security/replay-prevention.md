@@ -22,6 +22,7 @@ description: Learn how webhook providers leverage signed timestamps to mitigate 
   - [Slack](https://api.slack.com/authentication/verifying-requests-from-slack)
   - [PayPal](https://developer.paypal.com/api/rest/webhooks/#link-eventheadervalidation)
   - [Zendesk](https://developer.zendesk.com/documentation/event-connectors/webhooks/verifying/)
+  - [Keygen](https://keygen.sh/docs/api/signatures/#webhook-signatures)
 {% /table %}
 ---
 
