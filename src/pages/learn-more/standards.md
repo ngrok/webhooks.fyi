@@ -20,7 +20,7 @@ The Shared Signals and Events (SSE) is an OpenID Foundation initiative focused o
 
 ## CloudEvents
 
-CloudEvents is a specification for describing event data in a common way. The specification includes [webhooks](https://github.com/cloudevents/spec/blob/main/cloudevents/http-webhook.md) and seeks to simplify event declaration and delivery across systems. CloudEvents is a new effort and is still under active development by the Cloud Native Computing Foundation (CNFC).
+CloudEvents is a specification for describing event data in a common way. The specification includes [webhooks](https://github.com/cloudevents/spec/blob/main/cloudevents/http-webhook.md) and seeks to simplify event declaration and delivery across systems. CloudEvents is a new effort and is still under active development by the Cloud Native Computing Foundation (CNCF).
 
 [Learn More >](https://cloudevents.io/)
 
