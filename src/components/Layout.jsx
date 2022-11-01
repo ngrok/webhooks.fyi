@@ -12,6 +12,8 @@ import { Prose } from '@/components/Prose'
 import { ThemeSelector } from '@/components/ThemeSelector'
 import { Footer } from '@/components/Footer'
 import { Search } from '@/components/Search'
+// TODO: To add Announcements
+// import Announcement from '@/components/Announcement'
 
 function Header({ navigation }) {
   let [isScrolled, setIsScrolled] = useState(false)
@@ -28,7 +30,9 @@ function Header({ navigation }) {
   }, [])
 
   return (
-    <header
+    <>
+      {/* <Announcement /> */}
+      <header
       className={clsx(
         'sticky top-0 z-50 flex flex-wrap items-center justify-between bg-white px-4 py-5 shadow-md shadow-slate-900/5 transition duration-500 dark:shadow-none sm:px-6 lg:px-8',
         {
@@ -37,36 +41,38 @@ function Header({ navigation }) {
           'dark:bg-transparent': !isScrolled,
         }
       )}
-    >
-      <div className="mr-6 lg:hidden">
-        <MobileNavigation navigation={navigation} />
-      </div>
-      <div className="relative flex flex-grow basis-0 items-center">
-        <Link href="/">
-          <a className="block w-10 overflow-hidden lg:w-auto">
-            <span className="sr-only">Home page</span>
-            <Logo />
-          </a>
-        </Link>
-      </div>
+      >
+        <div className="mr-6 lg:hidden">
+          <MobileNavigation navigation={navigation} />
+        </div>
+        <div className="relative flex flex-grow basis-0 items-center">
+          <Link href="/">
+            <a className="block w-10 overflow-hidden lg:w-auto">
+              <span className="sr-only">Home page</span>
+              <Logo />
+            </a>
+          </Link>
+        </div>
+        
+        <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
+          <Search />
+        </div> 
       
-      <div className="-my-5 mr-6 sm:mr-8 md:mr-0">
-        <Search />
-      </div> 
-     
-      <div className="relative flex basis-0 justify-end items-center space-x-6 sm:space-x-8 md:flex-grow">
-        <ThemeSelector className="relative z-10" />
-        <Link href="https://ngrok.com" target="_ngrok">
-          <a className="dark:text-slate-300">
-            <span className="sr-only">ngrok</span>
-            <div className="flex space-x-2 items-center hover:fill-sky-500">
-              <span className="flex-auto invisible md:visible">Built with love by</span>
-              <LogoNgrok className="flex-auto"/>
-            </div>
-          </a>
-        </Link>
-      </div>
-    </header>
+        <div className="relative flex basis-0 justify-end items-center space-x-6 sm:space-x-8 md:flex-grow">
+          <ThemeSelector className="relative z-10" />
+          <Link href="https://ngrok.com" target="_ngrok">
+            <a className="dark:text-slate-300">
+              <span className="sr-only">ngrok</span>
+              <div className="flex space-x-2 items-center hover:fill-sky-500">
+                <span className="flex-auto invisible md:visible">Built with love by</span>
+                <LogoNgrok className="flex-auto"/>
+              </div>
+            </a>
+          </Link>
+        </div>
+      </header>
+    </>
+
   )
 }
 
