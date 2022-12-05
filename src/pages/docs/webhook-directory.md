@@ -20,6 +20,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Convoy" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://getconvoy.io/docs/manual/sources#http-ingestion" /%}
   {% webhook-entry provider="CircleCI" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="❌" link="https://circleci.com/docs/2.0/webhooks/" /%}
   {% webhook-entry provider="Coinbase" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.cloud.coinbase.com/commerce/docs/webhooks-fields-and-security" /%}
+  {% webhook-entry provider="ConfigCat" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="✅" link="https://configcat.com/docs/advanced/notifications-webhooks/#verifying-webhook-requests" /%}
   {% webhook-entry provider="Contentful" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://www.contentful.com/developers/docs/extensibility/app-framework/request-verification/" /%}
   {% webhook-entry provider="Docusign" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="❌" link="https://developers.docusign.com/platform/webhooks/connect/hmac/" /%}
   {% webhook-entry provider="Dropbox" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://www.dropbox.com/developers/reference/webhooks" /%}
