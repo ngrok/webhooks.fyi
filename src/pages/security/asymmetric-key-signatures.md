@@ -17,7 +17,7 @@ description: With Asymmetric Key Signatures, webhook providers use a private key
   - Additional performance concerns with signing and validating signatures (compared to HMAC)
 ---
 * **Examples**
-* - [Sendgrid](https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features)
+* - [SendGrid](https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features)
   - [PayPal](https://developer.paypal.com/docs/api-basics/notifications/webhooks/notification-messages/#event-headers)
   - [Keygen](https://keygen.sh/docs/api/signatures/#webhook-signatures)
 {% /table %}
