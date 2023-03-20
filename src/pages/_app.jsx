@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useRouter } from "next/router";
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 
 import { Layout } from '@/components/Layout'
@@ -105,6 +106,9 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 }
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+  const canonicalUrl = (`https://webhooks.fyi` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+  
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =
@@ -122,6 +126,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>{pageTitle}</title>
         {description && <meta name="description" content={description} />}
+        <link rel="canonical" href={canonicalUrl} />
         <link rel="shortcut icon" href="/favicon.png" />
         <meta property="og:url" content="https://webhooks.fyi/" />
         <meta property="og:title" content={pageTitle} />
