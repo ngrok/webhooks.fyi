@@ -64,4 +64,3 @@ We didn't get to add every webhook we wanted! Here are some we'd love to include
 1. Trello - https://developer.atlassian.com/cloud/trello/guides/rest-api/webhooks/
 1. Twitter - https://developer.twitter.com/en/docs/twitter-api/enterprise/account-activity-api/guides/securing-webhooks
 1. VMWare Workspace One - https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/System_Settings_On_Prem/GUID-AWT-SYSTEM-ADVANCED-API-NOTIF.html
-1. Zoom - https://marketplace.zoom.us/docs/guides/build/webhook-only-app
