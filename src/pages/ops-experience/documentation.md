@@ -44,7 +44,7 @@ Delightful developer and ops experience starts with docs that are easy to unders
 ---
 * How to operate and & retry when webhook messages are lost (i.e. due to outages)
 * - [Stripe](https://stripe.com/docs/webhooks/best-practices#events-and-retries)
-  - [CircleCI](https://developer.bigcommerce.com/docs/ZG9jOjIyMDczMg-overview#callback-retry-mechanism)
+  - [BigCommerce](https://developer.bigcommerce.com/api-docs/store-management/webhooks/about-webhooks#callback-retry-mechanism)
 ---
 * Information that can enable compensatory controls, such as list of IPs for firewall rules
 * - [Brex](https://developer.brex.com/docs/webhooks/#ip-whitelisting)
