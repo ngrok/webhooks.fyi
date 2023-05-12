@@ -17,7 +17,7 @@ In webhook communications, the authentication, message integrity validation, and
 
 Webhook integrations seem simple to secure at the surface. However, webhook URLs can be explored by malicious actors — acting as legitimate webhook consumers — to carry out Distributed Denial of Service (DDoS), Server Site Request Forgery (SSRF), and other attacks to the provider infrastructure as described by [cuu508](https://news.ycombinator.com/item?id=32518208):
 
-> There are some interesting attack vectors to be aware of if you run a service where users can define webhooks, and your service will will call the user-defined webhooks to notify about certain system events. In my case, a monitoring service which can send notifications by calling user-defined webhook.
+> There are some interesting attack vectors to be aware of if you run a service where users can define webhooks, and your service will call the user-defined webhooks to notify about certain system events. In my case, a monitoring service which can send notifications by calling user-defined webhook.
 > * Timeouts: the user can set up a webhook receiver that takes very long to generate a response. Your service must be able to deal with that.
 > * Timeouts (slowloris): the webhook target could be sending back one byte at a time, with 1 second pauses inbetween. If you are using, say, the "requests" python library for making HTTP requests, the "timeout" parameter will not help here
 > * Private IPs and reserved IPs: you probably don't want users defining webhooks to http://127.0.0.1:<some-port> and probing your internal network. Remember about private IPv6 ranges too
