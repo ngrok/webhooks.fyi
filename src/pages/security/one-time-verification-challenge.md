@@ -20,6 +20,7 @@ description: Learn why and how webhook providers like Twitter, Okta, and Microso
   - [Airship](https://docs.airship.com/platform/sms/inbound-message-handling/#registering-your-sms-webhook)
   - [Microsoft OneDrive](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/webhook-receiver-validation-request?view=odsp-graph-online)
   - [Okta](https://developer.okta.com/docs/concepts/event-hooks/#one-time-verification-request)
+  - [Smartsheet](https://smartsheet.redoc.ly/tag/webhooksDescription#section/Creating-a-Webhook)
   - [Twitter](https://developer.twitter.com/en/docs/twitter-api/enterprise/account-activity-api/guides/securing-webhooks)
   - [Zoom](https://marketplace.zoom.us/docs/api-reference/webhook-reference/#revalidation)
 {% /table %}
