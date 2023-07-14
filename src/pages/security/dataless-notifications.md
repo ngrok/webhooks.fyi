@@ -38,7 +38,7 @@ Microsoft OneNote uses webhooks only to signal that an event has happened. The w
 }
 ```
 
-Upon receiving a webhook notification, consuming apps make a callback to the provider to gather more details about the event.
+Upon receiving a webhook notification, consuming apps make a request to the provider to gather more details about the event.
 
 While this technique helps reduce webhook security requirements, it requires webhook consumers to make proprietary API calls to the webhook provider to gather details.
 This adds implementation complexity for the webhook consumer and operational complexity with distributing API keys, handling REST API performance, and rate limits.
