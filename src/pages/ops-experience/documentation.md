@@ -23,10 +23,10 @@ Delightful developer and ops experience starts with docs that are easy to unders
   - [Microsoft OneDrive](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/webhook-receiver-validation-request?view=odsp-graph-online)
 ---
 * A comprehensive list of the security features and why they exist
-* - [Docusign](https://developers.docusign.com/platform/webhooks/connect/validation-and-security/)
+* - [DocuSign](https://developers.docusign.com/platform/webhooks/connect/validation-and-security/)
 ---
 * Human-friendly descriptions of why and how security controls work 
-* - [Docusign](https://developers.docusign.com/platform/webhooks/connect/hmac/#how-it-works)
+* - [DocuSign](https://developers.docusign.com/platform/webhooks/connect/hmac/#how-it-works)
   - [Calendly](https://developer.calendly.com/api-docs/ZG9jOjM2MzE2MDM4-webhook-signatures)
 ---
 * The journey (steps) for receiving, validating, and processing webhook events
@@ -36,7 +36,7 @@ Delightful developer and ops experience starts with docs that are easy to unders
 * Example payloads 
 * - [Aftership](https://www.aftership.com/docs/aftership/webhook/webhook-specifications#body)
   - [Typeform](https://developer.typeform.com/webhooks/example-payload/)
-  - [Pagerduty](https://developer.pagerduty.com/docs/ZG9jOjQ1MTg4ODQ0-overview#event-data-types)
+  - [PagerDuty](https://developer.pagerduty.com/docs/ZG9jOjQ1MTg4ODQ0-overview#event-data-types)
 ---
 * Complete sample code 
 * - [Buildkite](https://buildkite.com/docs/apis/webhooks#example-implementations) 

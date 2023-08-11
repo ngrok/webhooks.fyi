@@ -22,7 +22,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Coinbase" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.cloud.coinbase.com/commerce/docs/webhooks-fields-and-security" /%}
   {% webhook-entry provider="ConfigCat" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="✅" link="https://configcat.com/docs/advanced/notifications-webhooks/#verifying-webhook-requests" /%}
   {% webhook-entry provider="Contentful" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://www.contentful.com/developers/docs/concepts/webhooks/" /%}
-  {% webhook-entry provider="Docusign" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="❌" link="https://developers.docusign.com/platform/webhooks/connect/hmac/" /%}
+  {% webhook-entry provider="DocuSign" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="❌" link="https://developers.docusign.com/platform/webhooks/connect/hmac/" /%}
   {% webhook-entry provider="Dropbox" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://www.dropbox.com/developers/reference/webhooks" /%}
   {% webhook-entry provider="Facebook Graph API" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.facebook.com/docs/graph-api/webhooks/getting-started/#verification-requests) api" /%}
   {% webhook-entry provider="Facebook Messenger" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.facebook.com/docs/messenger-platform/webhook/#security" /%}
