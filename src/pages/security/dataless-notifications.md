@@ -20,6 +20,7 @@ description: Learn how webhook providers like Microsoft OneNote send webhooks no
 ---
 * **Example**
 * - [Microsoft OneNote](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/concepts/using-webhooks)
+* - [Smartsheet](https://smartsheet.redoc.ly/tag/webhooksDescription#section/Intro-to-Webhooks)
 {% /table %}
 ---
 
