@@ -19,7 +19,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Castle" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.castle.io/docs/subscribe-to-webhooks" /%}
   {% webhook-entry provider="Convoy" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://getconvoy.io/docs/manual/sources#http-ingestion" /%}
   {% webhook-entry provider="CircleCI" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="❌" link="https://circleci.com/docs/2.0/webhooks/" /%}
-  {% webhook-entry provider="Coinbase" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.cloud.coinbase.com/commerce/docs/webhooks-fields-and-security" /%}
+  {% webhook-entry provider="Coinbase" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.cloud.coinbase.com/commerce/docs/webhooks-security" /%}
   {% webhook-entry provider="ConfigCat" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="✅" link="https://configcat.com/docs/advanced/notifications-webhooks/#verifying-webhook-requests" /%}
   {% webhook-entry provider="Contentful" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://www.contentful.com/developers/docs/concepts/webhooks/" /%}
   {% webhook-entry provider="DocuSign" hash="sha256" encode="base64" rotation="✅" versioning="✅" timestamp="❌" link="https://developers.docusign.com/platform/webhooks/connect/hmac/" /%}
@@ -38,7 +38,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Intercom" hash="sha1" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://developers.intercom.com/intercom-api-reference/v1.0/reference/signed-notifications" /%}
   {% webhook-entry provider="Keygen" hash="sha256" encode="base64" rotation="❌" versioning="✅" timestamp="✅" link="https://keygen.sh/docs/api/webhooks/" /%}
   {% webhook-entry provider="LaunchDarkly" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://docs.launchdarkly.com/home/connecting/webhooks" /%}
-  {% webhook-entry provider="Lob" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://help.lob.com/print_mail/webhooks-for-tracking-events" /%}
+  {% webhook-entry provider="Lob" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="https://help.lob.com/print-and-mail/getting-data-and-results/using-webhooks#security-9" /%}
   {% webhook-entry provider="Mailchimp" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://mailchimp.com/developer/transactional/guides/track-respond-activity-webhooks/#authenticating-webhook-requests" /%}
   {% webhook-entry provider="MakePlans" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.makeplans.com/#webhooks" /%}
   {% webhook-entry provider="Maxio Chargify" hash="sha256" encode="hex" rotation="❌" versioning="❌" timestamp="❌" link="https://maxio-chargify.zendesk.com/hc/en-us/articles/5405357509645-Webhooks-Reference#webhook-signature" /%}
