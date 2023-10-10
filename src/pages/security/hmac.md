@@ -79,7 +79,6 @@ Like any other security control, HMAC is only as good as its implementation. In 
 1. Add sensitive headers to the hash digest:
     ```js
     ...
-    const signatureHeader = 'Signature-Header'
     const clientIdHeader = 'clientid'
     ...
     app.post('/webhook', (req, res) => {
