@@ -63,6 +63,7 @@ New webhooks are created and improved every day. Please [contribute](/docs/how-t
   {% webhook-entry provider="Twilio" hash="sha1" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="/webhook-directory/twilio" /%}
   {% webhook-entry provider="Twitter Account Activity API" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.twitter.com/en/docs/twitter-api/premium/account-activity-api/overview" /%}
   {% webhook-entry provider="Typeform" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.typeform.com/webhooks/secure-your-webhooks/" /%}
+  {% webhook-entry provider="Vonage" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.vonage.com/en/getting-started/concepts/webhooks#decoding-signed-webhooks" /%}
   {% webhook-entry provider="Xero" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="❌" link="https://developer.xero.com/documentation/guides/webhooks/configuring-your-server#intent-to-receive" /%}
   {% webhook-entry provider="Zendesk" hash="sha256" encode="base64" rotation="❌" versioning="❌" timestamp="✅" link="https://developer.zendesk.com/documentation/event-connectors/webhooks/verifying/" /%}
   {% webhook-entry provider="Zoom" hash="sha256" encode="hex" rotation="❌" versioning="✅" timestamp="✅" link="/webhook-directory/zoom" /%}
