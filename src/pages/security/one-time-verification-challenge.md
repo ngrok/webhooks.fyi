@@ -22,7 +22,7 @@ description: Learn why and how webhook providers like Twitter, Okta, and Microso
   - [Okta](https://developer.okta.com/docs/concepts/event-hooks/#one-time-verification-request)
   - [Smartsheet](https://smartsheet.redoc.ly/tag/webhooksDescription#section/Creating-a-Webhook)
   - [Twitter](https://developer.twitter.com/en/docs/twitter-api/enterprise/account-activity-api/guides/securing-webhooks)
-  - [Zoom](https://marketplace.zoom.us/docs/api-reference/webhook-reference/#revalidation)
+  - [Zoom](https://developers.zoom.us/docs/api/rest/webhook-reference/#validate-your-webhook-endpoint)
 {% /table %}
 ---
 

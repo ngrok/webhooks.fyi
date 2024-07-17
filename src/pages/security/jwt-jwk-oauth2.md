@@ -24,6 +24,7 @@ description: Learn how webhook providers use OAuth, JSON Web Tokens (JWTs), and 
   - [Plaid](https://plaid.com/docs/api/webhooks/webhook-verification/)
   - [SendGrid](https://docs.sendgrid.com/for-developers/tracking-events/getting-started-event-webhook-security-features#oauth-20)
   - [Wix](https://devforum.wix.com/kb/en/article/about-webhooks)
+  - [Zoom](https://developers.zoom.us/docs/api/rest/webhook-reference/#token-authentication-oauth)
 
 {% /table %}
 ---

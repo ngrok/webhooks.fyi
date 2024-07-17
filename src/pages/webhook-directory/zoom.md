@@ -4,7 +4,7 @@ pageTitle: Zoom Webhooks Specs | Examples| How to integrate
 description: Webhook specificactions for Zoom including Supported Events, Example Apps, Security Specs, and Documentations.
 --- 
 
-Zoom uses webhooks to notify third-party apps of events such as Meetings, Webinars,Recordings, User Activity, Billing, and Chat Messages created
+Zoom uses webhooks to notify third-party apps of events such as Meetings, Webinars, Recordings, User Activity, Billing, Chat Messages created, and Video SDK
 
 {% table %}
 ---
@@ -15,7 +15,7 @@ Zoom uses webhooks to notify third-party apps of events such as Meetings, Webina
   - **[Zero Downtime Rotation](/ops-experience/key-rotation)**: ❌
 ---
 * ## Supported Events
-* - **[Official Doc ↗](https://marketplace.zoom.us/docs/api-reference/webhook-reference/#objects-actions-and-events)**
+* - **[Official Doc ↗](https://developers.zoom.us/docs/api/)**
 ---
 * ## Security Headers
 * - **Signature Header**: `x-zm-signature`
@@ -26,11 +26,11 @@ Zoom uses webhooks to notify third-party apps of events such as Meetings, Webina
   - **Timestamp Format**: Unix Date
 ---
 * ## Documentation
-* - [Official Doc ↗](https://marketplace.zoom.us/docs/api-reference/webhook-reference/#verify-webhook-events)
-  - [IP Origins for whitelist ↗](https://marketplace.zoom.us/docs/api-reference/webhook-reference/#ip-addresses)
+* - [Official Doc ↗](https://developers.zoom.us/docs/api/rest/webhook-reference/)
+  - [IP Origins for whitelist ↗](https://developers.zoom.us/docs/api/rest/webhook-reference/#ip-addresses)
 ---
 * ## SDKs and Sample Code
-* - [NodeJS Sample ↗](https://github.com/zoom/webhook-sample-node.js)
+* - [NodeJS Sample ↗](https://github.com/zoom/webhook-sample)
 {% /table %}
 
 ---

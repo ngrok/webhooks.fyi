@@ -23,6 +23,7 @@ description: HMAC is, by far, the most popular authentication and message securi
   - [Slack](https://api.slack.com/authentication/verifying-requests-from-slack)
   - [Square](https://developer.squareup.com/docs/webhooks/step3validate)
   - [Twilio](https://www.twilio.com/docs/usage/security#validating-requests)
+  - [Zoom](https://developers.zoom.us/docs/api/rest/webhook-reference/#verify-with-zooms-header)
 {% /table %}
 ---
 

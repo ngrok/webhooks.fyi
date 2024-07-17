@@ -21,7 +21,7 @@ description: Learn how webhook providers implement shared secrets — Basic Auth
   - [mParticle](https://docs.mparticle.com/integrations/webhook/event/)
   - [Okta Event Hooks](https://developer.okta.com/docs/concepts/event-hooks/#one-time-verification-request)
   - [VMWare WorkspaceOne](https://docs.vmware.com/en/VMware-Workspace-ONE-UEM/services/System_Settings_On_Prem/GUID-AWT-SYSTEM-ADVANCED-API-NOTIF.html)
-  - [Zoom](https://marketplace.zoom.us/docs/guides/build/webhook-only-app)
+  - [Zoom](https://developers.zoom.us/docs/api/rest/webhook-reference/#basic-authentication)
 {% /table %}
 
 ---
