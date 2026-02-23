@@ -12,3 +12,9 @@ Awesome Webhooks provides a curated list of tutorials, guides, and articles abou
 Huge shout out to [@_adeel](https://twitter.com/_adeel) for building and curating this list.
 
 [Visit Awesome Webhooks >>](https://github.com/realadeel/awesome-webhooks)
+
+## [Spiderhash](https://spiderhash.io)
+
+Spiderhash is a webhook inspection and debugging tool for capturing, replaying, and troubleshooting webhook deliveries during development and operations.
+
+[Visit Spiderhash >>](https://spiderhash.io)
