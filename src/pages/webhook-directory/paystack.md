@@ -49,7 +49,10 @@ const crypto = require('crypto')
 const sigHeader = 'paystack-signature'
 const hashAlgo = 'sha512'
 const encode = 'hex'
-const hmacSecret = process.env.PAYSTACK_WEBHOOK_SECRET
+const hmacSecrets = [
+    process.env.PAYSTACK_WEBHOOK_SECRET,
+    process.env.PAYSTACK_WEBHOOK_SECRET_PREVIOUS
+].filter(Boolean)
 const TOLERANCE_SECONDS = 300
 app.post('/paystack-webhook', express.raw({ type: 'application/json' }), (req, res) => {
     const header = req.get(sigHeader) || ''
@@ -71,27 +74,29 @@ app.post('/paystack-webhook', express.raw({ type: 'application/json' }), (req, r
         return res.status(403).send('Request expired')
     }
 
-    const expected = crypto
-        .createHmac(hashAlgo, hmacSecret)
-        .update(timestamp + '.')
-        .update(req.body)
-        .digest(encode)
+    const matched = hmacSecrets.some((secret) => {
+        const expected = crypto
+            .createHmac(hashAlgo, secret)
+            .update(timestamp + '.')
+            .update(req.body)
+            .digest(encode)
 
-    const matched = signatures.some((entry) => {
-        const value = entry.trim().substring(3)
-        const colon = value.indexOf(':')
-        const hex = colon === -1 ? '' : value.substring(colon + 1)
-        if (!/^[0-9a-f]{128}$/.test(hex)) {
-            return false
-        }
-        try {
-            return crypto.timingSafeEqual(
-                Buffer.from(expected, 'hex'),
-                Buffer.from(hex, 'hex')
-            )
-        } catch (err) {
-            return false
-        }
+        return signatures.some((entry) => {
+            const value = entry.trim().substring(3)
+            const colon = value.indexOf(':')
+            const hex = colon === -1 ? '' : value.substring(colon + 1)
+            if (!/^[0-9a-f]{128}$/.test(hex)) {
+                return false
+            }
+            try {
+                return crypto.timingSafeEqual(
+                    Buffer.from(expected, 'hex'),
+                    Buffer.from(hex, 'hex')
+                )
+            } catch (err) {
+                return false
+            }
+        })
     })
 
     if (!matched) {
@@ -112,10 +117,10 @@ const sigHeader = 'x-paystack-signature'
 const hashAlgo = 'sha512'
 const encode = 'hex'
 const hmacSecret = process.env.SECRET_KEY
-app.post('/paystack-webhook', (req, res) => {
+app.post('/paystack-webhook', express.raw({ type: 'application/json' }), (req, res) => {
     const expected = crypto
         .createHmac(hashAlgo, hmacSecret)
-        .update(req.rawBody)
+        .update(req.body)
         .digest(encode)
     const signature = req.headers[sigHeader] || ''
     if (

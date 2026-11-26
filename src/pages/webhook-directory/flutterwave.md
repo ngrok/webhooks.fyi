@@ -48,11 +48,16 @@ Flutterwave publishes two official webhook guides. The v4 docs sign the raw body
 
 ```js
 const crypto = require('crypto')
+const bodyParser = require('body-parser')
 const sigHeader = 'flutterwave-signature'
 const hashAlgo = 'sha256'
 const encode = 'base64'
 const hmacSecret = process.env.FLW_SECRET_HASH
-app.post('/flutterwave-webhook', (req, res) => {
+app.post('/flutterwave-webhook', bodyParser.json({
+    verify: (req, res, buf) => {
+        req.rawBody = buf.toString()
+    }
+}), (req, res) => {
     const signature = req.headers[sigHeader] || ''
     const digest = crypto
         .createHmac(hashAlgo, hmacSecret)
